@@ -1,0 +1,22 @@
+{
+  "name": "frontend-template",
+  "version": "0.0.1",
+  "description": "frontend application template",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": "v20.11.0"
+  },
+  "packageManager": "^pnpm@8.15.1"
+}
