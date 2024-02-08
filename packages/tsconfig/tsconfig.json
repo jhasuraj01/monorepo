@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    // "resolvePackageJsonExports": true,
+    // "allowArbitraryExtensions": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "noErrorTruncation": true,
+    "moduleResolution": "Bundler",
+
+    "baseUrl": "./",
+    "target": "ESNext",
+    "sourceMap": true,
+    "declaration": false,
+
+    "types": [],
+    "lib": [
+      "ESNext"
+    ],
+
+  }
+}

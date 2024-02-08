@@ -1,0 +1,29 @@
+{
+  "name": "@jhasuraj01/tsconfig",
+  "version": "0.0.1",
+  "description": "Default Typescript Configuration for Packages",
+  "main": "tsconfig.json",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "exports": {
+    ".": "./tsconfig.json",
+    "./cjs": "./tsconfig-cjs.json",
+    "./mjs": "./tsconfig-mjs.json",
+    "./amd": "./tsconfig-amd.json",
+    "./umd": "./tsconfig-umd.json",
+    "./types": "./tsconfig-types.json"
+  },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": "v20.11.0"
+  },
+  "packageManager": "^pnpm@8.15.1"
+}
