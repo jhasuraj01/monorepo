@@ -1,12 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "frontend-template",
+  "name": "@jhasuraj01/hello",
   "version": "0.0.1",
-  "description": "frontend application template",
-  "main": "index.js",
-  "private": true,
+  "description": "Default Typescript Configuration for Packages",
+  "main": "./src/index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm"
+  },
+  "exports": {
+    ".": "./src/index.js"
   },
   "keywords": [],
   "author": {

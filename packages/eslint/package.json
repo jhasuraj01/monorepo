@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@jhasuraj01/eslint",
   "version": "0.0.1",
   "description": "Default EsLint Configuration for Packages",
@@ -18,7 +19,8 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "v20.11.0"
+    "node": "v20.11.0",
+    "pnpm": "^8.15.1"
   },
   "packageManager": "^pnpm@8.15.1",
   "devDependencies": {

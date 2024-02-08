@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@jhasuraj01/tsconfig",
   "version": "0.0.1",
   "description": "Default Typescript Configuration for Packages",
@@ -24,7 +25,8 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "v20.11.0"
+    "node": "v20.11.0",
+    "pnpm": "^8.15.1"
   },
   "packageManager": "^pnpm@8.15.1"
 }
