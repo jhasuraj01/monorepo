@@ -1,0 +1,6 @@
+{
+  "extends": "@jhasuraj01/tsconfig/mjs",
+  "compilerOptions": {
+    "outDir": "./dist/mjs",
+  }
+}

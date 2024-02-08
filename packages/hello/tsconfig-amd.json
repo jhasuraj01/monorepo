@@ -1,7 +1,6 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "@jhasuraj01/tsconfig/amd",
   "compilerOptions": {
-    "module": "AMD",
     "outDir": "./dist/amd",
   }
 }

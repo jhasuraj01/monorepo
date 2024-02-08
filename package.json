@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "description": "frontend application template",
   "main": "index.js",
+  "type": "module",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm"

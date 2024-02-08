@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/hello",
+  "name": "@jhasuraj01/world",
   "version": "0.0.1",
-  "description": "Suraj's Hello",
+  "description": "Suraj's World",
   "main": "./dist/cjs/index.js",
   "module": "./dist/mjs/index.js",
   "type": "module",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@jhasuraj01/eslint": "workspace:^",
     "@jhasuraj01/tsconfig": "workspace:^",
+    "@jhasuraj01/hello": "workspace:^",
     "typescript": "^5.3.3"
   },
   "keywords": [],

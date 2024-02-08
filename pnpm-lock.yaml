@@ -35,7 +35,34 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
+  packages/hello:
+    devDependencies:
+      '@jhasuraj01/eslint':
+        specifier: workspace:^
+        version: link:../eslint
+      '@jhasuraj01/tsconfig':
+        specifier: workspace:^
+        version: link:../tsconfig
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
   packages/tsconfig: {}
+
+  packages/world:
+    devDependencies:
+      '@jhasuraj01/eslint':
+        specifier: workspace:^
+        version: link:../eslint
+      '@jhasuraj01/hello':
+        specifier: workspace:^
+        version: link:../hello
+      '@jhasuraj01/tsconfig':
+        specifier: workspace:^
+        version: link:../tsconfig
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
 
 packages:
 

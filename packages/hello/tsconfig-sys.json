@@ -1,0 +1,6 @@
+{
+  "extends": "@jhasuraj01/tsconfig/sys",
+  "compilerOptions": {
+    "outDir": "./dist/sys",
+  }
+}

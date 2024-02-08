@@ -1,0 +1,6 @@
+{
+  "extends": "@jhasuraj01/tsconfig/types",
+  "compilerOptions": {
+    "declarationDir": "./dist/types",
+  }
+}

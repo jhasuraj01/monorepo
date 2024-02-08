@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "description": "Default EsLint Configuration for Packages",
   "main": ".eslintrc.json",
+  "module": ".eslintrc.json",
+  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },

@@ -30,7 +30,7 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
     "noErrorTruncation": true,
-    "moduleResolution": "Bundler",
+    // "moduleResolution": "NodeNext",
 
     "baseUrl": "./",
     "target": "ESNext",
@@ -39,8 +39,12 @@
 
     "types": [],
     "lib": [
-      "ESNext"
-    ],
-
+      "ESNext",
+      "DOM",
+    ]
+  },
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true,
   }
 }

@@ -1,7 +1,6 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "@jhasuraj01/tsconfig/umd",
   "compilerOptions": {
-    "module": "UMD",
     "outDir": "./dist/umd",
   }
 }

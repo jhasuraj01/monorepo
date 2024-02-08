@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "description": "Default Typescript Configuration for Packages",
   "main": "tsconfig.json",
+  "module": "tsconfig.json",
+  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },

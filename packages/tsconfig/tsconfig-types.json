@@ -1,10 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-      "module": "ESNext",
-      "emitDeclarationOnly": true,
-      "declaration": true,
-      "declarationMap": true,
-      "declarationDir": "./dist/types",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist/types",
   }
 }

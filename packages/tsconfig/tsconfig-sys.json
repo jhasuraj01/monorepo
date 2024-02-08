@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-      "module": "System",
-      "outDir": "./dist/sys"
+    "module": "System",
+    "outDir": "./dist/sys"
   }
 }
