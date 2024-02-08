@@ -8,9 +8,10 @@
   },
   "exports": {
     ".": "./tsconfig.json",
+    "./amd": "./tsconfig-amd.json",
     "./cjs": "./tsconfig-cjs.json",
     "./mjs": "./tsconfig-mjs.json",
-    "./amd": "./tsconfig-amd.json",
+    "./sys": "./tsconfig-sys.json",
     "./umd": "./tsconfig-umd.json",
     "./types": "./tsconfig-types.json"
   },
