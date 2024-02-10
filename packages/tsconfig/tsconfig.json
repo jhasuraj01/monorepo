@@ -31,6 +31,7 @@
     "allowJs": false,
     "noErrorTruncation": true,
     // "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
 
     "baseUrl": "./",
     "target": "ESNext",
@@ -42,9 +43,5 @@
       "ESNext",
       "DOM",
     ]
-  },
-  "tsc-alias": {
-    "verbose": false,
-    "resolveFullPaths": true,
   }
 }

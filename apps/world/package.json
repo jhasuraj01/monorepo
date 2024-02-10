@@ -1,10 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/world",
+  "name": "my-world-app",
   "version": "0.0.1",
   "description": "Suraj's World",
   "main": "./dist/cjs/index.js",
   "module": "./dist/mjs/index.js",
+  "types": "./dist/types/index.d.ts",
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -16,16 +17,18 @@
     "build:sys": "tsc -p ./tsconfig-sys.json",
     "build:umd": "tsc -p ./tsconfig-umd.json",
     "build:types": "tsc -p ./tsconfig-types.json",
-    "build:all": "pnpm build:amd && pnpm build:cjs && pnpm build:mjs && pnpm build:sys && pnpm build:umd && pnpm build:types",
-    "build": "pnpm build:mjs && pnpm build:types"
+    "build:all": "pnpm build:cjs && pnpm build:mjs && pnpm build:types",
+    "build": "pnpm build:mjs && pnpm build:types",
+    "clear": "rimraf node_modules dist",
+    "start": "node ./dist/mjs/index.js"
   },
-  "exports": {
-    ".": "./src/index.js"
+  "dependencies": {
+    "@jhasuraj01/hello": "workspace:*"
   },
   "devDependencies": {
-    "@jhasuraj01/eslint": "workspace:^",
-    "@jhasuraj01/tsconfig": "workspace:^",
-    "@jhasuraj01/hello": "workspace:^",
+    "@jhasuraj01/eslint": "workspace:*",
+    "@jhasuraj01/tsconfig": "workspace:*",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   },
   "keywords": [],
@@ -40,5 +43,6 @@
     "node": "v20.11.0",
     "pnpm": "^8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1"
+  "packageManager": "^pnpm@8.15.1",
+  "nx": {}
 }

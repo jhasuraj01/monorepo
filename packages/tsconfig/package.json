@@ -7,7 +7,8 @@
   "module": "tsconfig.json",
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "clear": "rimraf node_modules dist"
   },
   "exports": {
     ".": "./tsconfig.json",
@@ -30,5 +31,9 @@
     "node": "v20.11.0",
     "pnpm": "^8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1"
+  "packageManager": "^pnpm@8.15.1",
+  "nx": {},
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  }
 }

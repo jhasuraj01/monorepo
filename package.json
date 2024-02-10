@@ -6,7 +6,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "build:app": "nx build my-world-app",
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "migrate": "nx migrate latest",
+    "graph": "nx graph",
+    "clear": "nx run-many -t clear",
+    "start:app": "nx start my-world-app"
   },
   "keywords": [],
   "author": {
@@ -20,5 +27,10 @@
     "node": "v20.11.0",
     "pnpm": "^8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1"
+  "packageManager": "^pnpm@8.15.1",
+  "devDependencies": {
+    "@nx/eslint": "18.0.4",
+    "eslint": "~8.48.0",
+    "nx": "18.0.4"
+  }
 }
