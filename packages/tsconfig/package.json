@@ -11,7 +11,12 @@
     "clear": "rimraf node_modules dist"
   },
   "exports": {
-    ".": "./tsconfig.json",
+    ".": {
+      "node": "./tsconfig-cjs.json",
+      "require": "./tsconfig-cjs.json",
+      "import": "./tsconfig-mjs.json",
+      "default": "./tsconfig-mjs.json"
+    },
     "./amd": "./tsconfig-amd.json",
     "./cjs": "./tsconfig-cjs.json",
     "./mjs": "./tsconfig-mjs.json",

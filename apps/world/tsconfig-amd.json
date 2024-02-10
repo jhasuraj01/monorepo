@@ -1,6 +1,0 @@
-{
-  "extends": "@jhasuraj01/tsconfig/amd",
-  "compilerOptions": {
-    "outDir": "./dist/amd",
-  }
-}
