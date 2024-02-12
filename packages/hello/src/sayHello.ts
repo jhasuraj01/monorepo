@@ -1,3 +1,3 @@
-export const sayHello = () => {
-  console.log('Hello World!')
+export const sayHello = (): string => {
+  return 'Suraj Jha'
 }
