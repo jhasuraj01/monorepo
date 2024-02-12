@@ -9,6 +9,7 @@
     "preinstall": "npx only-allow pnpm",
     "build:app": "nx build my-world-app",
     "build": "nx run-many -t build",
+    "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
     "lint": "nx run-many -t lint",
     "migrate": "nx migrate latest",
     "graph": "nx graph",

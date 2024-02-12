@@ -21,6 +21,7 @@
     "lint": "eslint --ext .ts,tsx,js,jsx src/ --fix",
     "lint:check": "eslint --ext .ts,tsx,js,jsx src/",
     "build": "tsup",
+    "dev": "tsup --watch",
     "clear": "rimraf node_modules dist",
     "start": "node ."
   },
