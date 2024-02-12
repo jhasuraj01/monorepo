@@ -3,37 +3,32 @@
   "name": "@jhasuraj01/hello",
   "version": "0.0.1",
   "description": "Suraj's Hello",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/mjs/index.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/iife/index.js"
+    }
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint --ext .ts,tsx,js,jsx src/ --fix",
     "lint:check": "eslint --ext .ts,tsx,js,jsx src/",
-    "build:amd": "tsc -p ./tsconfig-amd.json",
-    "build:cjs": "tsc -p ./tsconfig-cjs.json",
-    "build:mjs": "tsc -p ./tsconfig-mjs.json",
-    "build:sys": "tsc -p ./tsconfig-sys.json",
-    "build:umd": "tsc -p ./tsconfig-umd.json",
-    "build:types": "tsc -p ./tsconfig-types.json",
-    "build:all": "pnpm build:amd && pnpm build:cjs && pnpm build:mjs && pnpm build:types",
-    "build": "pnpm build:mjs && pnpm build:types",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "clear": "rimraf node_modules dist"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "node": "./dist/cjs/index.js",
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/mjs/index.js",
-      "default": "./dist/mjs/index.js"
-    }
   },
   "devDependencies": {
     "@jhasuraj01/eslint": "workspace:*",
-    "@jhasuraj01/tsconfig": "workspace:*",
+    "@jhasuraj01/config": "workspace:*",
     "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
   "keywords": [],

@@ -1,6 +1,0 @@
-{
-  "extends": "@jhasuraj01/tsconfig/umd",
-  "compilerOptions": {
-    "outDir": "./dist/umd",
-  }
-}
