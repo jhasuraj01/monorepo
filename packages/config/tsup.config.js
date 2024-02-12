@@ -2,15 +2,28 @@ import { defineConfig } from 'tsup';
 
 export const tsup = defineConfig({
   format: ['esm', 'cjs', 'iife'],
-  entry: ['src/**/*.ts'],
+  outExtension: ({ format }) => {
+    if(format === 'esm') {
+      return {
+          js: '.mjs',
+      }
+    }
+    if(format === 'cjs') {
+      return {
+          js: '.cjs',
+      }
+    }
+    return {
+        js: '.js',
+    }
+  },
+  entry: ['src/index.ts'],
   sourcemap: true,
   keepNames: true,
   dts: true,
   shims: true,
   skipNodeModulesBundle: true,
   clean: true,
-  target: ['esnext'],
   bundle: true,
   treeshake: true,
-  legacyOutput: true,
 });

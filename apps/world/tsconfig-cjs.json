@@ -1,6 +1,0 @@
-{
-  "extends": "@jhasuraj01/tsconfig/cjs",
-  "compilerOptions": {
-    "outDir": "./dist/cjs",
-  }
-}

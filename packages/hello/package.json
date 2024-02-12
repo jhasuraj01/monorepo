@@ -3,17 +3,17 @@
   "name": "@jhasuraj01/hello",
   "version": "0.0.1",
   "description": "Suraj's Hello",
-  "main": "./dist/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "node": "./dist/index.js",
-      "require": "./dist/index.js",
-      "import": "./dist/esm/index.js",
-      "default": "./dist/iife/index.js"
+      "node": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
