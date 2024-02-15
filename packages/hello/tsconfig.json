@@ -1,3 +1,5 @@
 {
   "extends": "@jhasuraj01/config/ts",
+  "include": [ "src/**/*.ts" ],
+  "exclude": [ "node_modules", "dist" ]
 }
