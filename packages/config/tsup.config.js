@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
-export const tsup = defineConfig({
-  format: ['esm', 'cjs', 'iife'],
+export const tsup = defineConfig((options) => ({
+  format: options.watch ? ['esm', 'cjs'] : ['esm', 'cjs', 'iife'],
   outExtension: ({ format }) => {
     if(format === 'esm') {
       return {
@@ -23,7 +23,8 @@ export const tsup = defineConfig({
   dts: true,
   shims: true,
   skipNodeModulesBundle: true,
-  clean: true,
   bundle: true,
-  treeshake: true,
-});
+  clean: !options.watch,
+  treeshake: !options.watch,
+  minify: !options.watch,
+}));

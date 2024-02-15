@@ -1,3 +1,5 @@
+import { speak } from "@jhasuraj01/speak"
+
 export const sayHello = (): string => {
-  return 'Suraj Jha'
+  return speak("Suraj Jha", "Hello World");
 }

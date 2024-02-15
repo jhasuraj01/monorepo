@@ -83,6 +83,28 @@ importers:
         version: 5.3.3
 
   packages/hello:
+    dependencies:
+      '@jhasuraj01/speak':
+        specifier: workspace:*
+        version: link:../speak
+    devDependencies:
+      '@jhasuraj01/config':
+        specifier: workspace:*
+        version: link:../config
+      '@jhasuraj01/eslint':
+        specifier: workspace:*
+        version: link:../eslint
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.5
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
+  packages/speak:
     devDependencies:
       '@jhasuraj01/config':
         specifier: workspace:*

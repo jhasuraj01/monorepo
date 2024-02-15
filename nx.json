@@ -2,10 +2,8 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
+      "cache": true,
       "dependsOn": ["^build"]
-    },
-    "dev": {
-      "dependsOn": ["^dev"]
     }
   },
   "affected": {
