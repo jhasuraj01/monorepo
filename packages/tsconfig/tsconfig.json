@@ -13,7 +13,7 @@
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
+    // "exactOptionalPropertyTypes": true, // oclif doesn't support this
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
@@ -28,23 +28,22 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    "baseUrl": "./",
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
     "noErrorTruncation": true,
     "esModuleInterop": true,
-
+    
     "target": "ESNext",
     "moduleResolution": "Bundler",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    "types": [],
+    // "skipLibCheck": true,
     "lib": [
       "ESNext",
-      "DOM",
-    ]
+      "DOM"
+    ],
   },
 
   "include": [ "src/**/*.ts" ],

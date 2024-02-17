@@ -1,27 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/config",
+  "name": "@jhasuraj01/tsconfig",
   "version": "0.0.1",
   "description": "Default Typescript Configuration for Packages",
   "type": "module",
+  "main": "./tsconfig.json",
+  "module": "./tsconfig.json",
+  "bin": "./tsconfig.json",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "clear": "rimraf dist",
     "clear:all": "rimraf dist && rimraf node_modules"
-  },
-  "exports": {
-    "./eslint": {
-      "node": "./.eslintrc.json",
-      "require": "./.eslintrc.json",
-      "import": "./.eslintrc.json",
-      "default": "./.eslintrc.json"
-    },
-    "./tsup": {
-      "node": "./tsup.config.js",
-      "require": "./tsup.config.js",
-      "import": "./tsup.config.js",
-      "default": "./tsup.config.js"
-    }
   },
   "keywords": [],
   "author": {
@@ -39,7 +28,7 @@
   "packageManager": "pnpm@8.15.1",
   "devDependencies": {
     "rimraf": "^5.0.5",
-    "tsup": "^8.0.2"
+    "typescript": "^5.3.3"
   },
   "nx": {}
 }

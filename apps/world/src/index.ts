@@ -1,3 +1,3 @@
 import { sayHello } from '@jhasuraj01/hello';
 
-console.log(sayHello());
+console.log(sayHello("Suraj"));

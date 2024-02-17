@@ -8,7 +8,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "clear": "rimraf dist"
+    "clear": "rimraf dist",
+    "clear:all": "rimraf dist && rimraf node_modules"
   },
   "exports": {
     ".": "./.eslintrc.json"
@@ -22,10 +23,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "v20.11.0",
-    "pnpm": "^8.15.1"
+    "node": "20.11.0",
+    "pnpm": "8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1",
+  "engineStrict": true,
+  "packageManager": "pnpm@8.15.1",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint": "^8.56.0",

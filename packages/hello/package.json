@@ -22,7 +22,8 @@
     "lint:check": "eslint --ext .ts,tsx,js,jsx src/",
     "build": "tsup",
     "dev": "tsup --watch",
-    "clear": "rimraf dist"
+    "clear": "rimraf dist",
+    "clear:all": "rimraf dist && rimraf node_modules"
   },
   "dependencies": {
     "@jhasuraj01/speak": "workspace:*"
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@jhasuraj01/config": "workspace:*",
     "@jhasuraj01/eslint": "workspace:*",
+    "@jhasuraj01/tsconfig": "workspace:*",
     "rimraf": "^5.0.5",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
@@ -43,9 +45,10 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "v20.11.0",
-    "pnpm": "^8.15.1"
+    "node": "20.11.0",
+    "pnpm": "8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1",
+  "engineStrict": true,
+  "packageManager": "pnpm@8.15.1",
   "nx": {}
 }

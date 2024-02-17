@@ -14,7 +14,8 @@
     "migrate": "nx migrate latest",
     "graph": "nx graph",
     "clear": "nx run-many -t clear",
-    "start:app": "nx start my-world-app"
+    "clear:all": "nx run-many -t clear:all && rimraf node_modules",
+    "start:world": "nx start my-world-app"
   },
   "keywords": [],
   "author": {
@@ -25,13 +26,15 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "v20.11.0",
-    "pnpm": "^8.15.1"
+    "node": "20.11.0",
+    "pnpm": "8.15.1"
   },
-  "packageManager": "^pnpm@8.15.1",
+  "engineStrict": true,
+  "packageManager": "pnpm@8.15.1",
   "devDependencies": {
     "@nx/eslint": "18.0.4",
     "eslint": "~8.48.0",
-    "nx": "18.0.4"
+    "nx": "18.0.4",
+    "rimraf": "^5.0.5"
   }
 }
