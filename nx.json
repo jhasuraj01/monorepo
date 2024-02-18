@@ -16,6 +16,12 @@
     "lint:check": {
       "cache": true,
       "dependsOn": ["build"]
+    },
+    "format": {
+      "cache": true
+    },
+    "format:check": {
+      "cache": true
     }
   },
   "affected": {
