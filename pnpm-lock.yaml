@@ -79,7 +79,7 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(@types/node@20.11.19)
 
-  packages/eslint:
+  packages/eslint-config:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.21.0
@@ -115,9 +115,9 @@ importers:
         specifier: workspace:*
         version: link:../speak
     devDependencies:
-      '@jhasuraj01/eslint':
+      '@jhasuraj01/eslint-config':
         specifier: workspace:*
-        version: link:../eslint
+        version: link:../eslint-config
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
@@ -136,9 +136,9 @@ importers:
 
   packages/speak:
     devDependencies:
-      '@jhasuraj01/eslint':
+      '@jhasuraj01/eslint-config':
         specifier: workspace:*
-        version: link:../eslint
+        version: link:../eslint-config
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
@@ -166,9 +166,9 @@ importers:
 
   packages/tsup:
     devDependencies:
-      '@jhasuraj01/eslint':
+      '@jhasuraj01/eslint-config':
         specifier: workspace:*
-        version: link:../eslint
+        version: link:../eslint-config
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig

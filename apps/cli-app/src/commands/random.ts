@@ -1,6 +1,10 @@
 import {Args, Command, Flags} from '@oclif/core'
 
 export default class Random extends Command {
+  static override args = {
+    file: Args.string({description: 'file to read'}),
+  }
+
   static override description = 'describe the command here'
 
   static override examples = [
@@ -8,14 +12,10 @@ export default class Random extends Command {
   ]
 
   static override flags = {
-    // flag with a value (-n, --name=VALUE)
-    name: Flags.string({char: 'n', description: 'name to print'}),
     // flag with no value (-f, --force)
     force: Flags.boolean({char: 'f'}),
-  }
-
-  static override args = {
-    file: Args.string({description: 'file to read'}),
+    // flag with a value (-n, --name=VALUE)
+    name: Flags.string({char: 'n', description: 'name to print'}),
   }
 
   public async run(): Promise<void> {

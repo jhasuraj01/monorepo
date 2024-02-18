@@ -1,6 +1,6 @@
-import {Args, Command, Flags} from '@oclif/core'
 import { sayHello } from '@jhasuraj01/hello'
 import { speak } from '@jhasuraj01/speak'
+import { Args, Command, Flags } from '@oclif/core'
 
 export default class Speak extends Command {
   static override args = {
@@ -18,8 +18,8 @@ export default class Speak extends Command {
 
     if(args.message) {
       this.log(speak({
-        speaker: flags.speaker,
         message: args.message,
+        speaker: flags.speaker,
       }));
       return;
     }

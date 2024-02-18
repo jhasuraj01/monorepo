@@ -8,6 +8,7 @@
     "declarationDir": "dist"
   },
   "include": [
+    "src/**/*.ts",
     "tsup.config.ts"
   ],
   "exclude": [

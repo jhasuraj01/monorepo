@@ -18,15 +18,15 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint --ext .ts,tsx,js,jsx src/ --fix",
-    "lint:check": "eslint --ext .ts,tsx,js,jsx src/",
+    "lint": "eslint ./src/**/* tsup.config.ts --ext .ts,js --fix",
+    "lint:check": "eslint ./src/**/* tsup.config.ts --ext .ts,js",
     "build": "tsup",
     "dev": "tsup --watch",
     "clear": "rimraf dist",
     "clear:all": "rimraf dist node_modules"
   },
   "devDependencies": {
-    "@jhasuraj01/eslint": "workspace:*",
+    "@jhasuraj01/eslint-config": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "rimraf": "^5.0.5",
     "tsup": "^8.0.2",

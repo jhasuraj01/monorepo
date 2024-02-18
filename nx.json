@@ -8,6 +8,14 @@
     "test": {
       "cache": true,
       "dependsOn": ["build"]
+    },
+    "lint": {
+      "cache": true,
+      "dependsOn": ["build"]
+    },
+    "lint:check": {
+      "cache": true,
+      "dependsOn": ["build"]
     }
   },
   "affected": {
@@ -20,6 +28,5 @@
         "targetName": "lint"
       }
     }
-  ],
-  "nxCloudAccessToken": "NzYyMGY2ZGMtY2I0MS00MmM1LWExMjMtNGY0YjgyMzQ2YzYxfHJlYWQtd3JpdGU="
+  ]
 }

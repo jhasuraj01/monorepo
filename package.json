@@ -13,6 +13,7 @@
     "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
     "graph": "nx graph",
     "lint": "nx run-many -t lint",
+    "lint:check": "nx run-many -t lint:check",
     "migrate": "nx migrate latest",
     "preinstall": "npx only-allow pnpm",
     "test": "nx run-many -t test",

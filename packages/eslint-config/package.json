@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/eslint",
+  "name": "@jhasuraj01/eslint-config",
   "version": "0.0.1",
   "description": "Default EsLint Configuration for Packages",
   "main": ".eslintrc.json",
@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "lint": "echo \"Ignore ESLint Package\"",
     "clear": "rimraf dist",
     "clear:all": "rimraf dist node_modules"
   },

@@ -1,7 +1,7 @@
-export type SpeakParams = {
-  message: string,
-  speaker: string,
+export interface SpeakParams {
+  speaker: string
+  message: string
 }
-export const speak = ({speaker, message}: SpeakParams): string => {
-  return `${speaker} said "${message}"`;
+export const speak = ({ speaker, message }: SpeakParams): string => {
+  return `${speaker} said "${message}"`
 }
