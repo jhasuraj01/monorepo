@@ -16,6 +16,7 @@
     "clear": "rimraf dist",
     "clear:all": "rimraf dist && rimraf node_modules",
     "build": "rimraf dist && tsc -b",
+    "postbuild": "chmod +x ./bin/run.js",
     "dev": "tsc --watch",
     "lint": "eslint . --ext .ts",
     "postpack": "rimraf oclif.manifest.json",
