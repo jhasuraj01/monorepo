@@ -9,7 +9,7 @@
     "build": "nx run-many -t build",
     "build:cli": "nx build cli-app",
     "clear": "nx run-many -t clear",
-    "clear:all": "nx run-many -t clear:all && rimraf .nx && rimraf pnpm-lock.* && rimraf node_modules",
+    "clear:all": "nx run-many -t clear:all && rimraf .nx pnpm-lock.* node_modules",
     "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
     "graph": "nx graph",
     "lint": "nx run-many -t lint",

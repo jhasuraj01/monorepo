@@ -9,7 +9,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "clear": "rimraf dist",
-    "clear:all": "rimraf dist && rimraf node_modules"
+    "clear:all": "rimraf dist node_modules"
   },
   "exports": {
     ".": "./.eslintrc.json"

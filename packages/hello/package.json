@@ -23,7 +23,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clear": "rimraf dist",
-    "clear:all": "rimraf dist && rimraf node_modules"
+    "clear:all": "rimraf dist node_modules"
   },
   "dependencies": {
     "@jhasuraj01/speak": "workspace:*"
