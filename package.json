@@ -6,18 +6,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "build:app": "nx build my-world-app",
     "build": "nx run-many -t build",
-    "test": "nx run-many -t test",
-    "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
-    "update:packages": "pnpm update --recursive",
-    "lint": "nx run-many -t lint",
-    "migrate": "nx migrate latest",
-    "graph": "nx graph",
+    "build:cli": "nx build cli-app",
     "clear": "nx run-many -t clear",
     "clear:all": "nx run-many -t clear:all && rimraf .nx && rimraf pnpm-lock.* && rimraf node_modules",
-    "start:world": "nx start my-world-app"
+    "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
+    "graph": "nx graph",
+    "lint": "nx run-many -t lint",
+    "migrate": "nx migrate latest",
+    "preinstall": "npx only-allow pnpm",
+    "test": "nx run-many -t test",
+    "update:packages": "pnpm update --recursive"
   },
   "keywords": [],
   "author": {
