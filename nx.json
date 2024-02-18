@@ -26,13 +26,5 @@
   },
   "affected": {
     "defaultBase": "main"
-  },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    }
-  ]
+  }
 }

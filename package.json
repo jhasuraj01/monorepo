@@ -36,8 +36,6 @@
   "engineStrict": true,
   "packageManager": "pnpm@8.15.1",
   "devDependencies": {
-    "@nx/eslint": "18.0.4",
-    "eslint": "~8.48.0",
     "nx": "18.0.4",
     "rimraf": "^5.0.5"
   }
