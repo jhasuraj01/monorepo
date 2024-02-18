@@ -1,4 +1,4 @@
-# Frontend Template
+# Monorepo Template
 
 ## Installation
 ```bash
