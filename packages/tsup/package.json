@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/hello",
+  "name": "@jhasuraj01/tsup",
   "version": "0.0.1",
-  "description": "Suraj's Hello",
+  "description": "Speaker speaks speech",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -25,11 +25,7 @@
     "clear": "rimraf dist",
     "clear:all": "rimraf dist && rimraf node_modules"
   },
-  "dependencies": {
-    "@jhasuraj01/speak": "workspace:*"
-  },
   "devDependencies": {
-    "@jhasuraj01/tsup": "workspace:*",
     "@jhasuraj01/eslint": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "rimraf": "^5.0.5",

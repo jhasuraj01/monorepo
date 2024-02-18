@@ -14,7 +14,7 @@
     "migrate": "nx migrate latest",
     "graph": "nx graph",
     "clear": "nx run-many -t clear",
-    "clear:all": "nx run-many -t clear:all && rimraf pnpm-lock.* && rimraf node_modules",
+    "clear:all": "nx run-many -t clear:all && rimraf .nx && rimraf pnpm-lock.* && rimraf node_modules",
     "start:world": "nx start my-world-app"
   },
   "keywords": [],

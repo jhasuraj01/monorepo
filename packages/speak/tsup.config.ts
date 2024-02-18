@@ -1,1 +1,1 @@
-export { tsup } from '@jhasuraj01/config/tsup';
+export { tsup } from '@jhasuraj01/tsup';

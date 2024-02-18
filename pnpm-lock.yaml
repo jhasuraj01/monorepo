@@ -27,15 +27,15 @@ importers:
         specifier: workspace:*
         version: link:../../packages/hello
     devDependencies:
-      '@jhasuraj01/config':
-        specifier: workspace:*
-        version: link:../../packages/config
       '@jhasuraj01/eslint':
         specifier: workspace:*
         version: link:../../packages/eslint
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@jhasuraj01/tsup':
+        specifier: workspace:*
+        version: link:../../packages/tsup
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -45,15 +45,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-
-  packages/config:
-    devDependencies:
-      rimraf:
-        specifier: ^5.0.5
-        version: 5.0.5
-      tsup:
-        specifier: ^8.0.2
-        version: 8.0.2(typescript@5.3.3)
 
   packages/eslint:
     devDependencies:
@@ -91,15 +82,15 @@ importers:
         specifier: workspace:*
         version: link:../speak
     devDependencies:
-      '@jhasuraj01/config':
-        specifier: workspace:*
-        version: link:../config
       '@jhasuraj01/eslint':
         specifier: workspace:*
         version: link:../eslint
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
+      '@jhasuraj01/tsup':
+        specifier: workspace:*
+        version: link:../tsup
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -112,15 +103,15 @@ importers:
 
   packages/speak:
     devDependencies:
-      '@jhasuraj01/config':
-        specifier: workspace:*
-        version: link:../config
       '@jhasuraj01/eslint':
         specifier: workspace:*
         version: link:../eslint
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
+      '@jhasuraj01/tsup':
+        specifier: workspace:*
+        version: link:../tsup
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -136,6 +127,24 @@ importers:
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
+  packages/tsup:
+    devDependencies:
+      '@jhasuraj01/eslint':
+        specifier: workspace:*
+        version: link:../eslint
+      '@jhasuraj01/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.5
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
       typescript:
         specifier: ^5.3.3
         version: 5.3.3

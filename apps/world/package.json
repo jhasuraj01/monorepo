@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@jhasuraj01/eslint": "workspace:*",
-    "@jhasuraj01/config": "workspace:*",
+    "@jhasuraj01/tsup": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "tsup": "^8.0.2",
     "rimraf": "^5.0.5",
