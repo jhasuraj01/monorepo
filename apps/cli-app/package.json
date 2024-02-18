@@ -21,7 +21,7 @@
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "pnpm run lint",
     "prepack": "pnpm run build && oclif manifest && oclif readme",
-    "test": "vitest run",
+    "test": "chmod +x ./bin/dev.js && vitest run",
     "test:dev": "vitest dev",
     "version": "oclif readme && git add README.md"
   },
