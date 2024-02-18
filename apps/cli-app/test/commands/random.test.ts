@@ -1,6 +1,6 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest'
 
-import { run } from '../helpers';
+import { run } from '../helpers'
 
 describe('random', () => {
   test('runs hello', () => {

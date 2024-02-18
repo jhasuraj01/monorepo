@@ -45,6 +45,9 @@ importers:
         specifier: 5.0.5
         version: 5.0.5
     devDependencies:
+      '@jhasuraj01/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
       '@oclif/prettier-config':
         specifier: ^0.2.1
         version: 0.2.1
@@ -118,6 +121,9 @@ importers:
       '@jhasuraj01/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@jhasuraj01/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
@@ -134,11 +140,23 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
+  packages/prettier-config:
+    devDependencies:
+      prettier:
+        specifier: 3.2.5
+        version: 3.2.5
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.5
+
   packages/speak:
     devDependencies:
       '@jhasuraj01/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@jhasuraj01/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
       '@jhasuraj01/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
@@ -8647,6 +8665,12 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /pretty-bytes@5.6.0:

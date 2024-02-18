@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@jhasuraj01/prettier-config",
+  "version": "0.0.1",
+  "description": "Default EsLint Configuration for Packages",
+  "main": ".prettierrc.json",
+  "module": ".prettierrc.json",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clear": "rimraf dist",
+    "clear:all": "rimraf dist node_modules"
+  },
+  "exports": {
+    ".": "./.prettierrc.json"
+  },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": "20.11.0",
+    "pnpm": "8.15.1"
+  },
+  "engineStrict": true,
+  "packageManager": "pnpm@8.15.1",
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "rimraf": "^5.0.5"
+  },
+  "nx": {}
+}

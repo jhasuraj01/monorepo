@@ -4,24 +4,26 @@ import { Args, Command, Flags } from '@oclif/core'
 
 export default class Speak extends Command {
   static override args = {
-    message: Args.string({description: 'The message', required: false}),
+    message: Args.string({ description: 'The message', required: false })
   }
 
   static override description = 'Speak Message'
 
   static override flags = {
-    speaker: Flags.string({char: 's', description: 'Speaker', required: true}),
+    speaker: Flags.string({ char: 's', description: 'Speaker', required: true })
   }
 
   async run(): Promise<void> {
-    const {args, flags} = await this.parse(Speak)
+    const { args, flags } = await this.parse(Speak)
 
-    if(args.message) {
-      this.log(speak({
-        message: args.message,
-        speaker: flags.speaker,
-      }));
-      return;
+    if (args.message) {
+      this.log(
+        speak({
+          message: args.message,
+          speaker: flags.speaker
+        })
+      )
+      return
     }
 
     this.log(sayHello(flags.speaker))
