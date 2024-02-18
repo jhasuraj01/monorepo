@@ -11,6 +11,7 @@
     "build": "nx run-many -t build",
     "test": "nx run-many -t test",
     "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
+    "update:packages": "pnpm update --recursive",
     "lint": "nx run-many -t lint",
     "migrate": "nx migrate latest",
     "graph": "nx graph",
@@ -39,3 +40,4 @@
     "rimraf": "^5.0.5"
   }
 }
+
