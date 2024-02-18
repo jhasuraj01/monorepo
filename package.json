@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "frontend-template",
-  "version": "0.0.1",
-  "description": "frontend application template",
+  "name": "monorepo",
+  "version": "0.0.0",
+  "description": "monorepo template",
   "type": "module",
   "private": true,
   "scripts": {
