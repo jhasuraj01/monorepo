@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@jhasuraj01/cli-app",
+  "version": "0.0.1",
+  "description": "Sample CLI Application",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "bin": {
+    "jhasuraj01-cli-app": "./bin/run.js"
+  },
+  "exports": "./dist/index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clear": "rimraf dist",
+    "clear:all": "rimraf dist && rimraf node_modules",
+    "build": "rimraf dist && tsc -b",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "pnpm run lint",
+    "prepack": "pnpm run build && oclif manifest && oclif readme",
+    "test": "chmod +x ./bin/dev.js && vitest run",
+    "test:dev": "vitest dev",
+    "version": "oclif readme && git add README.md"
+  },
+  "dependencies": {
+    "@jhasuraj01/hello": "workspace:*",
+    "@jhasuraj01/speak": "workspace:*",
+    "@jhasuraj01/tsconfig": "workspace:*",
+    "@oclif/core": "^3.19.2",
+    "@oclif/plugin-help": "^6.0.13",
+    "@oclif/plugin-plugins": "^4.2.3",
+    "rimraf": "5.0.5"
+  },
+  "devDependencies": {
+    "@oclif/prettier-config": "^0.2.1",
+    "@types/node": "^20.11.19",
+    "eslint": "^8.56.0",
+    "eslint-config-oclif": "^5.0.0",
+    "eslint-config-oclif-typescript": "^3.0.47",
+    "eslint-config-prettier": "^9.1.0",
+    "execa": "^8.0.1",
+    "oclif": "^4.4.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.0"
+  },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": "20.11.0",
+    "pnpm": "8.15.1"
+  },
+  "engineStrict": true,
+  "packageManager": "pnpm@8.15.1",
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "oclif": {
+    "bin": "jhasuraj01-cli-app",
+    "commands": "./dist/commands",
+    "dirname": "jhasuraj01-cli-app",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topics": {
+      "speak": {
+        "description": "Say hello to the world and others"
+      }
+    },
+    "topicSeparator": " "
+  },
+  "nx": {}
+}
