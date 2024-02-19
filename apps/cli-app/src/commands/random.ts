@@ -21,7 +21,7 @@ export default class Random extends Command {
 
     const name = flags.name ?? 'world'
     this.log(`hello ${name} from src/commands/random.ts`)
-    if (args.file && flags.force) {
+    if (args.file !== undefined && flags.force) {
       this.log(`you input --force and --file: ${args.file}`)
     }
   }

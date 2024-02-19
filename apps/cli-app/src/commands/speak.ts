@@ -16,7 +16,7 @@ export default class Speak extends Command {
   async run(): Promise<void> {
     const { args, flags } = await this.parse(Speak)
 
-    if (args.message) {
+    if (args.message !== undefined) {
       this.log(
         speak({
           message: args.message,

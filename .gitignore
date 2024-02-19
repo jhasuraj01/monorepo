@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 .nx/cache
+.husky/_/**

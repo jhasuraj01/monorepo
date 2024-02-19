@@ -19,7 +19,9 @@
     "migrate": "nx migrate latest",
     "preinstall": "npx only-allow pnpm",
     "test": "nx run-many -t test",
-    "update:packages": "pnpm update --recursive"
+    "test:config": "chmod +x test-config.sh && sh test-config.sh",
+    "update:packages": "pnpm update --recursive",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": {
@@ -36,8 +38,8 @@
   "engineStrict": true,
   "packageManager": "pnpm@8.15.1",
   "devDependencies": {
+    "husky": "^9.0.11",
     "nx": "18.0.4",
     "rimraf": "^5.0.5"
   }
 }
-

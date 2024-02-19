@@ -7,4 +7,4 @@ const CLI_PATH = './bin/dev.js'
 export const run = (
   commands: string[],
   options: SyncOptions = {}
-): ExecaSyncReturnValue => execaSync(`${CLI_PATH}`, commands, options)
+): ExecaSyncReturnValue => execaSync(CLI_PATH, commands, options)
