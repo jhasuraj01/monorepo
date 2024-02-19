@@ -10,8 +10,8 @@ To add a dependency to all packages in your workspace using **pnpm**, you can us
 ```bash
 pnpm -r <package-name>
 ```
-
-Replace `<package-name>` with the name of the package you want to add. This command will install the specified package in all packages within your workspace that have it listed as a dependency¹².
+> [!TIP]
+> Replace `<package-name>` with the name of the package you want to add. This command will install the specified package in all packages within your workspace that have it listed as a dependency¹².
 
 If you want to specify whether the package should be a regular dependency, a dev dependency, or an optional dependency, you can use the appropriate flags:
 
