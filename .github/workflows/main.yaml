@@ -1,25 +1,20 @@
-name: pr
+name: main
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - ready_for_review
-
-env:
-  NX_BASE: origin/${{github.base_ref}}
+  push:
+    branches:
+      - main
+      - dev
+      - release/*
+  workflow_dispatch:
 
 jobs:
-  check_affected:
+  e2e:
     runs-on: ubuntu-latest
 
     steps:
       - name: setup repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: setup pnpm
         uses: pnpm/action-setup@v3
@@ -32,7 +27,6 @@ jobs:
 
       - name: log params
         run: |
-          echo NX_BASE = $NX_BASE
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
 
@@ -40,13 +34,13 @@ jobs:
         run: pnpm i
 
       - name: build
-        run: pnpm build
+        run: pnpm build:all
 
       - name: lint check
-        run: pnpm lint:check
+        run: pnpm lint:check:all
 
       - name: format check
-        run: pnpm format:check
+        run: pnpm format:check:all
 
       - name: test
-        run: pnpm test
+        run: pnpm test:all

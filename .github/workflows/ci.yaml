@@ -1,0 +1,52 @@
+name: ci
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+
+env:
+  NX_BASE: origin/${{github.base_ref}}
+
+jobs:
+  check_affected:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: setup repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: setup pnpm
+        uses: pnpm/action-setup@v3
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+
+      - name: log params
+        run: |
+          echo NX_BASE = $NX_BASE
+          echo node version = $(node --version)
+          echo pnpm version = $(pnpm --version)
+
+      - name: install
+        run: pnpm i
+
+      - name: build
+        run: pnpm build
+
+      - name: lint check
+        run: pnpm lint:check
+
+      - name: format check
+        run: pnpm format:check
+
+      - name: test
+        run: pnpm test
