@@ -12,7 +12,7 @@ env:
   NX_BASE: origin/${{github.base_ref}}
 
 jobs:
-  lint-test:
+  check_affected:
     runs-on: ubuntu-latest
 
     steps:
