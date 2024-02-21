@@ -4,6 +4,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "github.copilot-chat",
         "github.vscode-pull-request-github",
         "nrwl.angular-console"
       ]
