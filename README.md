@@ -34,4 +34,4 @@ Remember that this command operates within the context of your workspace, so it 
 
 ## Readings
 - [Conventional Commits](https://www.conventionalcommits.org/) - A specification for adding human and machine readable meaning to commit messages
-
+- [Semantic Versioning Specification](https://semver.org/) - SemVer
