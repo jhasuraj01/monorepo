@@ -32,6 +32,24 @@ If you want to specify whether the package should be a regular dependency, a dev
 
 Remember that this command operates within the context of your workspace, so it will affect all packages that share dependencies. Happy coding! 🚀
 
-## Readings
-- [Conventional Commits](https://www.conventionalcommits.org/) - A specification for adding human and machine readable meaning to commit messages
-- [Semantic Versioning Specification](https://semver.org/) - SemVer
+## Commitlint
+
+Commitlint is a tool to help enforce a consistent commit style. This helps with versioning, generating changelogs, and navigating the commit history. Here are some common types of commits:
+
+- `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- `chore`: Regular code maintenance tasks.
+- `ci`: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- `docs`: Documentation only changes.
+- `feat`: A new feature.
+- `fix`: A bug fix.
+- `perf`: A code change that improves performance.
+- `refactor`: A code change that neither fixes a bug nor adds a feature.
+- `revert`: Reverts a previous commit.
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+- `test`: Adding missing tests or correcting existing tests.
+
+For more information, refer to the following resources:
+
+- [Commitlint GitHub](https://github.com/conventional-changelog/commitlint)
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Semantic Versioning Specification](https://semver.org/)

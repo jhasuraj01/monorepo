@@ -11,6 +11,7 @@
     "build:cli": "nx build cli-app",
     "clear": "nx run-many -t clear",
     "clear:all": "nx run-many -t clear:all && rimraf .nx pnpm-lock.* node_modules",
+    "commitlint": "commitlint -e",
     "dev": "pnpm build && pnpm --recursive --parallel --stream run dev",
     "format": "nx affected -t format",
     "format:all": "nx run-many -t format",
@@ -44,6 +45,8 @@
   "engineStrict": true,
   "packageManager": "pnpm@8.15.1",
   "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "husky": "^9.0.11",
     "nx": "18.0.4",
     "rimraf": "^5.0.5"
