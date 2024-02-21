@@ -31,3 +31,7 @@ If you want to specify whether the package should be a regular dependency, a dev
   ```
 
 Remember that this command operates within the context of your workspace, so it will affect all packages that share dependencies. Happy coding! 🚀
+
+## Readings
+- [Conventional Commits](https://www.conventionalcommits.org/) - A specification for adding human and machine readable meaning to commit messages
+
