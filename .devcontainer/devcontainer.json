@@ -4,7 +4,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "github.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "nrwl.angular-console"
       ]
     }
   }
