@@ -6,6 +6,7 @@
     "node": true
   },
   "extends": [
+    "eslint:recommended",
     "standard-with-typescript",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
@@ -15,7 +16,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": [ "node_modules/**", "dist/**", "bin/**", "build/**" ],
+  "ignorePatterns": [ "node_modules/**", "dist/**", "bin/**", "build/**","**/tsconfig.*" ],
   "noInlineConfig": true,
   "rules": {}
 }

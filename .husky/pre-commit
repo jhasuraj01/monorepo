@@ -1,3 +1,5 @@
+pnpm format:check
+pnpm typecheck:src
+pnpm typecheck:test
 pnpm build
 pnpm lint:check
-pnpm format:check

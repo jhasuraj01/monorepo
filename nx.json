@@ -22,9 +22,16 @@
     },
     "format:check": {
       "cache": true
+    },
+    "typecheck:src": {
+      "cache": true,
+      "dependsOn": ["build"]
+    },
+    "typecheck:test": {
+      "cache": true,
+      "dependsOn": ["build"]
     }
   },
-  "affected": {
-    "defaultBase": "main"
-  }
+  "defaultBase": "origin/main",
+  "nxCloudAccessToken": "nx-cloud-access-token"
 }
