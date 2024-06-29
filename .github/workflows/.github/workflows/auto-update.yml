@@ -1,0 +1,56 @@
+name: Auto Update Packages
+on:
+  schedule:
+    # Runs "At 00:00 on Sunday." (see https://crontab.guru)
+    - cron: '0 0 * * 0'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: setup repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: setup pnpm
+        uses: pnpm/action-setup@v3
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+
+      - name: update dependencies
+        run: pnpm test:config
+
+      - name: Create or update branch and commit changes
+        run: |
+          git config --global user.name "jhasuraj01"
+          git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
+          git fetch origin
+          if git show-ref --quiet refs/heads/update-dependencies; then
+            git checkout update-dependencies
+          else
+            git checkout -b update-dependencies
+          fi
+          git add -A
+          git commit -m "chore: auto updated dependencies on $(date +'%d/%m/%Y')" || echo "No changes to commit"
+          git push origin update-dependencies
+
+      - name: Create or update Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: 'jhasuraj01'
+          branch: update-dependencies
+          title: "chore: auto updated dependencies"
+          body: "This PR updates the dependencies automatically."
+          commit-message: "chore: auto updated dependencies on $(date +'%d/%m/%Y')"
+          update-existing-pr: true
