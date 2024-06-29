@@ -30,12 +30,17 @@ jobs:
         with:
           node-version-file: "package.json"
           cache: "pnpm"
+      
+      - name: setup env
+        run: |
+          echo "chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $COMMIT_MESSAGE
 
       - name: log params
         run: |
           echo NX_BASE = $NX_BASE
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
+          echo COMMIT_MESSAGE = $COMMIT_MESSAGE
 
       # - name: checkout update-dependencies branch
       #   run: |
@@ -52,7 +57,6 @@ jobs:
       - name: update dependencies
         run: |
           pnpm test:config
-          export COMMIT_MESSAGE="chore: auto updated dependencies on $(date +'%d/%m/%Y')"
 
       - name: create or update pull request
         uses: peter-evans/create-pull-request@v6
@@ -60,6 +64,6 @@ jobs:
           reviewers: 'jhasuraj01'
           branch: update-dependencies
           base: main
-          title: $COMMIT_MESSAGE
+          title: ${{ env.COMMIT_MESSAGE }}
           body: "This PR updates the dependencies automatically."
-          commit-message: $COMMIT_MESSAGE
+          commit-message: ${{ env.COMMIT_MESSAGE }}
