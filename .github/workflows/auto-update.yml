@@ -33,7 +33,7 @@ jobs:
       
       - name: setup env
         run: |
-          echo "chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $COMMIT_MESSAGE
+          export COMMIT_MESSAGE="chore: auto updated dependencies on $(date +'%d/%m/%Y')"
 
       - name: log params
         run: |
