@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: setup repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: setup pnpm
         uses: pnpm/action-setup@v3
