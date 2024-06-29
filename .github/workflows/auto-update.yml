@@ -39,8 +39,8 @@ jobs:
 
       - name: checkout update-dependencies branch
         run: |
-          git config --global user.name "jhasuraj01"
-          git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin
           if git ls-remote --heads origin refs/heads/update-dependencies; then
             git checkout update-dependencies
