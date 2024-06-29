@@ -24,7 +24,7 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.12.1",
+    "node": "20.15.1",
     "pnpm": "8.15.6"
   },
   "engineStrict": true,
