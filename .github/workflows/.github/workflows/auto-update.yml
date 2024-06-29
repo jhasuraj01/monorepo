@@ -53,4 +53,3 @@ jobs:
           title: "chore: auto updated dependencies"
           body: "This PR updates the dependencies automatically."
           commit-message: "chore: auto updated dependencies on $(date +'%d/%m/%Y')"
-          update-existing-pr: true
