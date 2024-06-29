@@ -34,7 +34,7 @@ jobs:
       
       - name: setup env
         run: |
-          echo "COMMIT_MESSAGE=\"chore: auto updated dependencies on $(date +'%d/%m/%Y')\"" >> $GITHUB_ENV
+          echo "COMMIT_MESSAGE=chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $GITHUB_ENV
 
       - name: log params
         run: |
