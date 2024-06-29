@@ -65,6 +65,6 @@ jobs:
           reviewers: 'jhasuraj01'
           branch: update-dependencies
           base: main
-          title: $COMMIT_MESSAGE
+          title: ${{ env.COMMIT_MESSAGE }}
           body: "This PR updates the dependencies automatically."
-          commit-message: $COMMIT_MESSAGE
+          commit-message: ${{ env.COMMIT_MESSAGE }}
