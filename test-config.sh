@@ -1,5 +1,4 @@
-clear \
-&& pnpm i \
+pnpm i \
 && pnpm update \
 && pnpm update:packages \
 && pnpm clear:all \
