@@ -59,9 +59,8 @@ jobs:
           git push origin update-dependencies
 
       - name: create or update pull request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           reviewers: 'jhasuraj01'
           branch: update-dependencies
           base: main
