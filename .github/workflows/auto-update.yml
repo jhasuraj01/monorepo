@@ -7,6 +7,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  NX_BASE: origin/${{github.base_ref}}
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+
 jobs:
   build:
     # The type of runner that the job will run on
@@ -26,6 +30,12 @@ jobs:
         with:
           node-version-file: "package.json"
           cache: "pnpm"
+
+      - name: log params
+        run: |
+          echo NX_BASE = $NX_BASE
+          echo node version = $(node --version)
+          echo pnpm version = $(pnpm --version)
 
       - name: update dependencies
         run: pnpm test:config
