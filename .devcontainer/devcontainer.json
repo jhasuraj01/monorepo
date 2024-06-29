@@ -12,7 +12,7 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/node": {
-      "version": "20.15.1"
+      "version": "20.15.0"
     },
     "ghcr.io/devcontainers-contrib/features/pnpm": {
       "version": "9.4.0"
