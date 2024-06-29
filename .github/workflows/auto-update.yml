@@ -44,6 +44,7 @@ jobs:
           git fetch origin
           if git show-ref --quiet refs/heads/update-dependencies; then
             git checkout update-dependencies
+            git pull origin update-dependencies
           else
             git checkout -b update-dependencies
           fi
