@@ -37,10 +37,7 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
 
-      - name: update dependencies
-        run: pnpm test:config
-
-      - name: Create or update branch and commit changes
+      - name: checkout update-dependencies branch
         run: |
           git config --global user.name "jhasuraj01"
           git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
@@ -50,6 +47,12 @@ jobs:
           else
             git checkout -b update-dependencies
           fi
+
+      - name: update dependencies
+        run: pnpm test:config
+
+      - name: commit changes
+        run: |
           git add -A
           git commit -m "chore: auto updated dependencies on $(date +'%d/%m/%Y')" || echo "No changes to commit"
           git push origin update-dependencies
