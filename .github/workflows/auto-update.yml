@@ -60,6 +60,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           reviewers: 'jhasuraj01'
           branch: update-dependencies
+          base: main
           title: "chore: auto updated dependencies"
           body: "This PR updates the dependencies automatically."
           commit-message: "chore: auto updated dependencies on $(date +'%d/%m/%Y')"
