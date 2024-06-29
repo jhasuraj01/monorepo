@@ -42,7 +42,7 @@ jobs:
           git config --global user.name "jhasuraj01"
           git config --global user.email "44930179+jhasuraj01@users.noreply.github.com"
           git fetch origin
-          if git show-ref --quiet refs/heads/update-dependencies; then
+          if git ls-remote --heads origin refs/heads/update-dependencies; then
             git checkout update-dependencies
             git pull origin update-dependencies
           else
@@ -58,7 +58,7 @@ jobs:
           git commit -m "chore: auto updated dependencies on $(date +'%d/%m/%Y')" || echo "No changes to commit"
           git push origin update-dependencies
 
-      - name: Create or update Pull Request
+      - name: create or update pull request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
