@@ -35,7 +35,7 @@
     "@jhasuraj01/hello": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "@oclif/core": "^3.27.0",
-    "@oclif/plugin-help": "^6.2.3",
+    "@oclif/plugin-help": "^6.2.4",
     "@oclif/plugin-plugins": "^4.3.10",
     "rimraf": "5.0.5"
   },
@@ -48,7 +48,7 @@
     "eslint-config-oclif": "^5.2.0",
     "eslint-config-oclif-typescript": "^3.1.8",
     "execa": "^8.0.1",
-    "oclif": "^4.13.10",
+    "oclif": "^4.13.12",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
     "vitest": "^1.6.0"
