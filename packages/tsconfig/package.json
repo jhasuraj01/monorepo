@@ -10,7 +10,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "clear": "rimraf dist",
-    "clear:all": "rimraf dist node_modules"
+    "clear:all": "rimraf dist node_modules",
+    "update:packages": "npx npm-check-updates -u"
   },
   "keywords": [],
   "author": {
@@ -28,7 +29,7 @@
   "packageManager": "pnpm@9.4.0",
   "devDependencies": {
     "rimraf": "^5.0.7",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "nx": {}
 }

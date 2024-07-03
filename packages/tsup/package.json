@@ -24,14 +24,15 @@
     "dev": "tsup --watch",
     "clear": "rimraf dist",
     "clear:all": "rimraf dist node_modules",
-    "typecheck:src": "tsc -p ./tsconfig.json --noEmit"
+    "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
+    "update:packages": "npx npm-check-updates -u"
   },
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "rimraf": "^5.0.7",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "keywords": [],
   "author": {

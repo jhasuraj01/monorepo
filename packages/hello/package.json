@@ -29,7 +29,8 @@
     "test": "vitest run --coverage",
     "test:dev": "vitest dev",
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
-    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
+    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit",
+    "update:packages": "npx npm-check-updates -u"
   },
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:*",
@@ -39,7 +40,7 @@
     "@vitest/coverage-v8": "^1.6.0",
     "rimraf": "^5.0.7",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.3",
     "vitest": "^1.6.0"
   },
   "keywords": [],

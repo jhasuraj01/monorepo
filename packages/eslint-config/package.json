@@ -10,7 +10,8 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "echo \"Ignore ESLint Package\"",
     "clear": "rimraf dist",
-    "clear:all": "rimraf dist node_modules"
+    "clear:all": "rimraf dist node_modules",
+    "update:packages": "npx npm-check-updates -u"
   },
   "exports": {
     ".": "./.eslintrc.json"
@@ -35,7 +36,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "rimraf": "^5.0.7",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "nx": {}
 }
