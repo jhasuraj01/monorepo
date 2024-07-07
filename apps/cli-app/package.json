@@ -44,7 +44,7 @@
     "@jhasuraj01/eslint-config": "workspace:^",
     "@jhasuraj01/prettier-config": "workspace:*",
     "@oclif/prettier-config": "^0.2.1",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "eslint": "^8.57.0",
     "eslint-config-oclif": "^5.2.0",
     "eslint-config-oclif-typescript": "^3.1.8",
