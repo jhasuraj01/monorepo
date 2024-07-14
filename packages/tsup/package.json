@@ -30,7 +30,7 @@
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
-    "rimraf": "^5.0.8",
+    "rimraf": "^5.0.9",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   },
