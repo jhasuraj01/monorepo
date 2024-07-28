@@ -31,8 +31,8 @@
     "@jhasuraj01/eslint-config": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
     "rimraf": "^5.0.9",
-    "tsup": "^8.2.1",
-    "typescript": "^5.5.3"
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
   },
   "keywords": [],
   "author": {
