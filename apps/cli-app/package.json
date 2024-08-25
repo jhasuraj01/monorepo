@@ -63,11 +63,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.15.0",
-    "pnpm": "9.4.0"
+    "node": "20.17.0",
+    "pnpm": "9.8.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.8.0",
   "prettier": "@jhasuraj01/prettier-config",
   "files": [
     "/bin",
