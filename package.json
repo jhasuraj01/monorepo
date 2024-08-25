@@ -32,7 +32,7 @@
     "typecheck:src:all": "nx run-many -t typecheck:src",
     "typecheck:test": "nx affected -t typecheck:test",
     "typecheck:test:all": "nx run-many -t typecheck:test",
-    "update:packages": "npx npm-check-updates -ui --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager"
+    "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager"
   },
   "keywords": [],
   "author": {
