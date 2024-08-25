@@ -35,24 +35,24 @@
   "dependencies": {
     "@jhasuraj01/hello": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
-    "@oclif/core": "^3.27.0",
-    "@oclif/plugin-help": "^6.2.7",
-    "@oclif/plugin-plugins": "^4.3.10",
-    "rimraf": "5.0.5"
+    "@oclif/core": "^4.0.19",
+    "@oclif/plugin-help": "^6.2.10",
+    "@oclif/plugin-plugins": "^5.4.6",
+    "rimraf": "6.0.1"
   },
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:^",
     "@jhasuraj01/prettier-config": "workspace:*",
     "@oclif/prettier-config": "^0.2.1",
-    "@types/node": "^20.14.12",
+    "@types/node": "^22.5.0",
     "eslint": "^8.57.0",
-    "eslint-config-oclif": "^5.2.0",
-    "eslint-config-oclif-typescript": "^3.1.8",
-    "execa": "^8.0.1",
-    "oclif": "^4.14.9",
+    "eslint-config-oclif": "^5.2.1",
+    "eslint-config-oclif-typescript": "^3.1.9",
+    "execa": "^9.3.1",
+    "oclif": "^4.14.25",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
-    "vitest": "^1.6.0"
+    "vitest": "^2.0.5"
   },
   "keywords": [],
   "author": {
@@ -63,11 +63,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.15.0",
-    "pnpm": "9.4.0"
+    "node": "20.17.0",
+    "pnpm": "9.8.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.8.0",
   "prettier": "@jhasuraj01/prettier-config",
   "files": [
     "/bin",
