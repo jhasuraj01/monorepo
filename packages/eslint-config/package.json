@@ -10,8 +10,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "echo \"Ignore ESLint Package\"",
     "clear": "rimraf dist",
-    "clear:all": "rimraf dist node_modules",
-    "update:packages": "npx npm-check-updates -u"
+    "clear:all": "rimraf dist node_modules"
   },
   "exports": {
     ".": "./.eslintrc.json"

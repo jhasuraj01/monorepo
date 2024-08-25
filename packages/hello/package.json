@@ -29,8 +29,7 @@
     "test": "vitest run --coverage",
     "test:dev": "vitest dev",
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
-    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit",
-    "update:packages": "npx npm-check-updates -u"
+    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
   },
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:*",
