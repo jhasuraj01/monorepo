@@ -24,8 +24,7 @@
     "dev": "tsup --watch",
     "clear": "rimraf dist",
     "clear:all": "rimraf dist node_modules",
-    "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
-    "update:packages": "npx npm-check-updates -u"
+    "typecheck:src": "tsc -p ./tsconfig.json --noEmit"
   },
   "devDependencies": {
     "@jhasuraj01/eslint-config": "workspace:*",

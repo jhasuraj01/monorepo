@@ -29,8 +29,7 @@
     "test:dev": "vitest dev",
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
     "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit",
-    "version": "oclif readme && git add README.md",
-    "update:packages": "npx npm-check-updates -u"
+    "version": "oclif readme && git add README.md"
   },
   "dependencies": {
     "@jhasuraj01/hello": "workspace:*",
