@@ -48,7 +48,7 @@
     "eslint-config-oclif": "^5.2.1",
     "eslint-config-oclif-typescript": "^3.1.9",
     "execa": "^9.3.1",
-    "oclif": "^4.14.25",
+    "oclif": "^4.14.26",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
