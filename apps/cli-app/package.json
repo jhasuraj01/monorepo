@@ -34,7 +34,7 @@
   "dependencies": {
     "@jhasuraj01/hello": "workspace:*",
     "@jhasuraj01/tsconfig": "workspace:*",
-    "@oclif/core": "^4.0.19",
+    "@oclif/core": "^4.0.21",
     "@oclif/plugin-help": "^6.2.10",
     "@oclif/plugin-plugins": "^5.4.6",
     "rimraf": "6.0.1"
@@ -43,12 +43,12 @@
     "@jhasuraj01/eslint-config": "workspace:^",
     "@jhasuraj01/prettier-config": "workspace:*",
     "@oclif/prettier-config": "^0.2.1",
-    "@types/node": "^22.5.1",
+    "@types/node": "^22.5.4",
     "eslint": "^8.57.0",
     "eslint-config-oclif": "^5.2.1",
-    "eslint-config-oclif-typescript": "^3.1.9",
+    "eslint-config-oclif-typescript": "^3.1.10",
     "execa": "^9.3.1",
-    "oclif": "^4.14.27",
+    "oclif": "^4.14.29",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
@@ -63,10 +63,10 @@
   "license": "MIT",
   "engines": {
     "node": "20.17.0",
-    "pnpm": "9.8.0"
+    "pnpm": "9.9.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0",
   "prettier": "@jhasuraj01/prettier-config",
   "files": [
     "/bin",

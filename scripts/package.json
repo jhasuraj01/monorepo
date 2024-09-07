@@ -15,5 +15,11 @@
   "devDependencies": {
     "@types/node": "^22.5.4",
     "ts-node": "^10.9.2"
-  }
+  },
+  "engines": {
+    "node": "20.17.0",
+    "pnpm": "9.9.0"
+  },
+  "engineStrict": true,
+  "packageManager": "pnpm@9.9.0"
 }

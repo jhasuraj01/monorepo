@@ -15,10 +15,10 @@
       "version": "20.17.0"
     },
     "ghcr.io/devcontainers-contrib/features/pnpm": {
-      "version": "9.8.0"
+      "version": "9.9.0"
     },
     "ghcr.io/balazs23/devcontainers-features/nx": {
-      "version": "19.6.2"
+      "version": "19.6.5"
     }
   }
 }
