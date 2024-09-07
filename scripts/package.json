@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update-env": "ts-node update-env.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2"
+  }
+}

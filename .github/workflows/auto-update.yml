@@ -30,8 +30,21 @@ jobs:
         with:
           node-version-file: "package.json"
           cache: "pnpm"
-      
-      - name: setup env
+
+      - name: update env
+        run: |
+          pnpm update:env
+
+      - name: update pnpm
+        uses: pnpm/action-setup@v3
+
+      - name: update node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+
+      - name: setup environment variables
         run: |
           echo "COMMIT_MESSAGE=chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $GITHUB_ENV
 
