@@ -33,6 +33,7 @@ jobs:
 
       - name: update env
         run: |
+          pnpm i
           pnpm update:env
 
       - name: update pnpm
