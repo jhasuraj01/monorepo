@@ -48,9 +48,9 @@
     "eslint-config-oclif": "^5.2.1",
     "eslint-config-oclif-typescript": "^3.1.11",
     "execa": "^9.3.1",
-    "oclif": "^4.14.30",
+    "oclif": "^4.14.31",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.2",
     "vitest": "^2.0.5"
   },
   "keywords": [],
@@ -63,10 +63,10 @@
   "license": "MIT",
   "engines": {
     "node": "20.17.0",
-    "pnpm": "9.9.0"
+    "pnpm": "9.10.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "prettier": "@jhasuraj01/prettier-config",
   "files": [
     "/bin",
