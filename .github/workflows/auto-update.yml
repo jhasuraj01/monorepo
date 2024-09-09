@@ -58,10 +58,7 @@ jobs:
 
       - name: update dependencies
         run: |
-          pnpm update
-          pnpm update:packages
-          pnpm clear:all
-          pnpm i
+          pnpm test:config
 
       - name: create or update pull request
         uses: peter-evans/create-pull-request@v6
