@@ -1,8 +1,8 @@
 name: auto-update-packages
 on:
   schedule:
-    # Runs "At 00:00 on Sunday." (see https://crontab.guru)
-    - cron: '0 0 * * 0'
+    # Runs "At 00:00 on Saturday." (see https://crontab.guru)
+    - cron: '0 0 * * 6'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -58,7 +58,10 @@ jobs:
 
       - name: update dependencies
         run: |
-          pnpm test:config
+          pnpm update
+          pnpm update:packages
+          pnpm clear:all
+          pnpm i
 
       - name: create or update pull request
         uses: peter-evans/create-pull-request@v6
