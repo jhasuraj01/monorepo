@@ -1,1 +1,1 @@
-export { tsup } from '@jhasuraj01/tsup';
+export { tsup } from '@organization/tsup';

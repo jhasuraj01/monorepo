@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nx affected -t build",
     "build:all": "nx run-many -t build",
-    "build:cli": "nx build @jhasuraj01/cli-app",
+    "build:cli": "nx build @organization/cli-app",
     "clear": "nx run-many -t clear",
     "clear:all": "nx run-many -t clear:all && rimraf .nx pnpm-lock.* node_modules",
     "commitlint": "commitlint -e",

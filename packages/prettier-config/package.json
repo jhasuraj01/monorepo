@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/prettier-config",
+  "name": "@organization/prettier-config",
   "version": "0.0.0",
   "description": "Default EsLint Configuration for Packages",
   "main": ".prettierrc.json",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/tsup",
+  "name": "@organization/tsup",
   "version": "0.0.0",
   "description": "Speaker speaks speech",
   "main": "./dist/index.cjs",
@@ -27,8 +27,8 @@
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@jhasuraj01/eslint-config": "workspace:*",
-    "@jhasuraj01/tsconfig": "workspace:*",
+    "@organization/eslint-config": "workspace:*",
+    "@organization/tsconfig": "workspace:*",
     "rimraf": "^6.0.1",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2"

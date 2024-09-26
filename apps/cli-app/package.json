@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/cli-app",
+  "name": "@organization/cli-app",
   "version": "0.0.0",
   "description": "Sample CLI Application",
   "type": "module",
@@ -32,16 +32,16 @@
     "version": "oclif readme && git add README.md"
   },
   "dependencies": {
-    "@jhasuraj01/hello": "workspace:*",
-    "@jhasuraj01/tsconfig": "workspace:*",
+    "@organization/hello": "workspace:*",
+    "@organization/tsconfig": "workspace:*",
     "@oclif/core": "^4.0.21",
     "@oclif/plugin-help": "^6.2.11",
     "@oclif/plugin-plugins": "^5.4.7",
     "rimraf": "6.0.1"
   },
   "devDependencies": {
-    "@jhasuraj01/eslint-config": "workspace:^",
-    "@jhasuraj01/prettier-config": "workspace:*",
+    "@organization/eslint-config": "workspace:^",
+    "@organization/prettier-config": "workspace:*",
     "@oclif/prettier-config": "^0.2.1",
     "@types/node": "^22.5.4",
     "eslint": "^8.57.0",
@@ -67,7 +67,7 @@
   },
   "engineStrict": true,
   "packageManager": "pnpm@9.10.0",
-  "prettier": "@jhasuraj01/prettier-config",
+  "prettier": "@organization/prettier-config",
   "files": [
     "/bin",
     "/dist",

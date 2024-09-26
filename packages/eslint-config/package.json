@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/eslint-config",
+  "name": "@organization/eslint-config",
   "version": "0.0.0",
   "description": "Default EsLint Configuration for Packages",
   "main": ".eslintrc.json",

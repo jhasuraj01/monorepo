@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/tsconfig",
+  "name": "@organization/tsconfig",
   "version": "0.0.0",
   "description": "Default Typescript Configuration for Packages",
   "type": "module",

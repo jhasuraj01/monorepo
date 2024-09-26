@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@jhasuraj01/hello",
+  "name": "@organization/hello",
   "version": "0.0.0",
   "description": "Suraj's Hello",
   "main": "./dist/index.cjs",
@@ -32,10 +32,10 @@
     "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@jhasuraj01/eslint-config": "workspace:*",
-    "@jhasuraj01/prettier-config": "workspace:*",
-    "@jhasuraj01/tsconfig": "workspace:*",
-    "@jhasuraj01/tsup": "workspace:*",
+    "@organization/eslint-config": "workspace:*",
+    "@organization/prettier-config": "workspace:*",
+    "@organization/tsconfig": "workspace:*",
+    "@organization/tsup": "workspace:*",
     "@vitest/coverage-v8": "^2.0.5",
     "rimraf": "^6.0.1",
     "tsup": "^8.2.4",
@@ -56,6 +56,6 @@
   },
   "engineStrict": true,
   "packageManager": "pnpm@9.10.0",
-  "prettier": "@jhasuraj01/prettier-config",
+  "prettier": "@organization/prettier-config",
   "nx": {}
 }
