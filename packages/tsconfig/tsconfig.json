@@ -39,13 +39,9 @@
     "declaration": true,
     "declarationMap": true,
 
-    // "skipLibCheck": true,
+    "skipLibCheck": true,
     "lib": [
-      "ESNext",
-      "DOM"
+      "ESNext"
     ],
   },
-
-  "include": [ "src/**/*.ts" ],
-  "exclude": [ "node_modules", "dist" ]
 }
