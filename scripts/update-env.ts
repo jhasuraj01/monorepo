@@ -47,7 +47,10 @@ async function updatePackageJson(packageJsonFile: string, nodeVersion: string, p
 }
 
 async function main() {
-  const baseDir = path.resolve(__dirname, '../');
+  console.log('Updating project in', import.meta);
+
+  return;
+  const baseDir = path.resolve(import.meta.dirname, '../');
   const packageJsonFiles = findAllProjectPackageJsonFiles(baseDir);
 
   const latestPnpmVersion = await findLatestPackageVersion('pnpm');

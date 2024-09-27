@@ -1,8 +1,8 @@
 import type { SyncOptions, SyncResult } from 'execa'
-
+import { join } from 'path'
 import { execaSync } from 'execa'
 
-const CLI_PATH = './bin/dev.js'
+const CLI_PATH = join(import.meta.dirname, '../../dist/index.cjs')
 
 export const run = (
   commands: string[],

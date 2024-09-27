@@ -1,3 +1,4 @@
 {
-  "extends": ["oclif", "oclif-typescript", "@organization/eslint-config"]
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "extends": [ "@organization/eslint-config" ]
 }

@@ -33,7 +33,7 @@
     "typecheck:test": "nx affected -t typecheck:test",
     "typecheck:test:all": "nx run-many -t typecheck:test",
     "update:env": "nx run scripts:update-env",
-    "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager --reject eslint"
+    "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager"
   },
   "keywords": [],
   "author": {
@@ -48,12 +48,12 @@
     "pnpm": "9.10.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.11.0",
   "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/config-conventional": "^19.4.1",
-    "husky": "^9.1.5",
-    "nx": "19.6.6",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6",
+    "nx": "19.8.2",
     "rimraf": "^6.0.1"
   }
 }

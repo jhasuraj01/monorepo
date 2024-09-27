@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "update-env": "ts-node update-env.ts"
+    "update-env": "chmod +x ./update-env.ts && ./update-env.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,7 @@
     "glob": "^11.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
+    "@types/node": "^22.7.4",
     "ts-node": "^10.9.2"
   },
   "engines": {
@@ -21,5 +22,5 @@
     "pnpm": "9.10.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.11.0"
 }

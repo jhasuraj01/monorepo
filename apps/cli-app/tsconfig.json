@@ -6,9 +6,10 @@
     "rootDir": "src",
     "outDir": "dist",
     "declarationDir": "dist",
-    "module": "Node16",
-    "moduleResolution": "Node16",
-    "composite": true
+    "lib": [
+      "ESNext",
+      "DOM",
+    ]
   },
   "include": [
     "./src/**/*.ts"
@@ -16,8 +17,5 @@
   "exclude": [
     "node_modules",
     "dist"
-  ],
-  "ts-node": {
-    "esm": true
-  }
+  ]
 }
