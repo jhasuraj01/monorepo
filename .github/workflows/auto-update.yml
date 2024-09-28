@@ -45,7 +45,7 @@ jobs:
       - name: update env
         run: |
           pnpm i
-          pnpm --filter @organization/scripts build
+          pnpm build:scripts
           node scripts update-env .
 
       - name: update pnpm
