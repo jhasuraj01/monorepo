@@ -25,7 +25,6 @@ jobs:
       - name: setup environment variables
         run: |
           echo "COMMIT_MESSAGE=chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $GITHUB_ENV
-          echo "PNPM_HOME=$HOME/.local/share/pnpm" >> $GITHUB_ENV
 
       - name: setup pnpm
         uses: pnpm/action-setup@v4
@@ -43,6 +42,7 @@ jobs:
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
           echo PNPM_HOME = $PNPM_HOME
+          ls $PNPM_HOME
 
       - name: update env
         run: |
