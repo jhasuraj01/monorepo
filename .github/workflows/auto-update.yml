@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 1
 
       - name: setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
 
       - name: setup node
         uses: actions/setup-node@v4
@@ -34,11 +34,13 @@ jobs:
       - name: update env
         run: |
           pnpm i
+          pnpm setup
+          echo PNPM_HOME = $PNPM_HOME
           pnpm build
           pnpm update:env
 
       - name: update pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
 
       - name: update node
         uses: actions/setup-node@v4
@@ -56,7 +58,6 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
-          echo PNPM_HOME = $PNPM_HOME
 
       - name: update dependencies
         run: |
