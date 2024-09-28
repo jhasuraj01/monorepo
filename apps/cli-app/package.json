@@ -14,20 +14,19 @@
     }
   },
   "bin": {
-    "my-cli": "./dist/index.cjs"
+    "organization-cli-app": "./dist/index.cjs"
   },
   "scripts": {
-    "prepare": "pnpm setup",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint ./src/**/* ./test/**/* --ext .ts,js --fix",
     "lint:check": "eslint ./src/**/* ./test/**/* --ext .ts,js",
     "format": "prettier ./src/**/* ./test/**/* --write",
     "format:check": "prettier ./src/**/* ./test/**/* --check",
     "build": "tsup",
-    "postbuild": "pnpm i . -g",
+    "postbuild": "pnpm link --global",
     "dev": "tsup --watch",
     "clear": "rimraf data coverage dist",
-    "clear:all": "rimraf data coverage dist node_modules $PNPM_HOME/my-cli",
+    "clear:all": "rimraf data coverage dist node_modules $PNPM_HOME/organization-cli-app",
     "test": "vitest run --coverage",
     "test:dev": "vitest dev",
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit",

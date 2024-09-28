@@ -20,5 +20,6 @@
     "ghcr.io/balazs23/devcontainers-features/nx": {
       "version": "19.6.6"
     }
-  }
+  },
+  "postCreateCommand": "pnpm setup"
 }
