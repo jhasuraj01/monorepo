@@ -45,7 +45,7 @@ jobs:
       - name: update env
         run: |
           pnpm i
-          pnpm build
+          pnpm --filter @organization/scripts build
           node scripts update-env .
 
       - name: update pnpm
@@ -63,6 +63,8 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
+          ls $PNPM_HOME
+          echo PATH = $PATH
 
       - name: update dependencies
         run: |
