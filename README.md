@@ -1,19 +1,25 @@
 # Monorepo Template
 
 ## Installation
-```bash
+```sh
 pnpm i
 ```
 
 ## organization-scripts
-Run below scripts to rum automation scripts
+
+Build or update `organization-scripts`
+```sh
+pnpm build:scripts
+```
+
+Run below scripts to run automation scripts
 ```sh
 organization-scripts
 ```
 
 To add a dependency to all packages in your workspace using **pnpm**, you can use the following command:
 
-```bash
+```sh
 pnpm -r <package-name>
 ```
 > [!TIP]
@@ -22,17 +28,17 @@ pnpm -r <package-name>
 If you want to specify whether the package should be a regular dependency, a dev dependency, or an optional dependency, you can use the appropriate flags:
 
 - To install as a regular dependency:
-  ```bash
+  ```sh
   pnpm -r <package-name>
   ```
 
 - To install as a dev dependency:
-  ```bash
+  ```sh
   pnpm -r <package-name> -D
   ```
 
 - To install as an optional dependency:
-  ```bash
+  ```sh
   pnpm -r <package-name> -O
   ```
 
