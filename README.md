@@ -5,6 +5,12 @@
 pnpm i
 ```
 
+## organization-scripts
+Run below scripts to rum automation scripts
+```sh
+organization-scripts
+```
+
 To add a dependency to all packages in your workspace using **pnpm**, you can use the following command:
 
 ```bash
