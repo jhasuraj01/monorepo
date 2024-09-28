@@ -22,6 +22,11 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: setup environment variables
+        run: |
+          echo "COMMIT_MESSAGE=chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $GITHUB_ENV
+          echo "PNPM_HOME=$HOME/.local/share/pnpm" >> $GITHUB_ENV
+
       - name: setup pnpm
         uses: pnpm/action-setup@v4
 
@@ -31,11 +36,17 @@ jobs:
           node-version-file: "package.json"
           cache: "pnpm"
 
+      - name: log params
+        run: |
+          echo NX_BASE = $NX_BASE
+          echo node version = $(node --version)
+          echo pnpm version = $(pnpm --version)
+          echo COMMIT_MESSAGE = $COMMIT_MESSAGE
+          echo PNPM_HOME = $PNPM_HOME
+
       - name: update env
         run: |
           pnpm i
-          pnpm setup
-          echo PNPM_HOME = $PNPM_HOME
           pnpm build
           pnpm update:env
 
@@ -48,16 +59,13 @@ jobs:
           node-version-file: "package.json"
           cache: "pnpm"
 
-      - name: setup environment variables
-        run: |
-          echo "COMMIT_MESSAGE=chore: auto updated dependencies on $(date +'%d/%m/%Y')" >> $GITHUB_ENV
-
       - name: log params
         run: |
           echo NX_BASE = $NX_BASE
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
+          echo PNPM_HOME = $PNPM_HOME
 
       - name: update dependencies
         run: |
