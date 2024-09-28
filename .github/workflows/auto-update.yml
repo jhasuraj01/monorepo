@@ -55,6 +55,7 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
+          echo PNPM_HOME = $PNPM_HOME
 
       - name: update dependencies
         run: |

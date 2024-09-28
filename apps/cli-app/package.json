@@ -1,57 +1,51 @@
 {
-  "$schema": "https://json.schemastore.org/package.json",
   "name": "@organization/cli-app",
-  "version": "0.0.0",
-  "description": "Sample CLI Application",
-  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "bin": {
-    "jhasuraj01-cli-app": "./bin/run.js"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
   },
-  "exports": "./dist/index.js",
+  "bin": {
+    "organization-cli-app": "./dist/index.cjs"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "clear": "rimraf data dist tsconfig.tsbuildinfo",
-    "clear:all": "rimraf data dist tsconfig.tsbuildinfo node_modules *.tmp.*",
-    "build": "tsc -b",
-    "postbuild": "chmod +x ./bin/run.js",
-    "dev": "tsc --watch",
     "lint": "eslint ./src/**/* ./test/**/* --ext .ts,js --fix",
     "lint:check": "eslint ./src/**/* ./test/**/* --ext .ts,js",
     "format": "prettier ./src/**/* ./test/**/* --write",
     "format:check": "prettier ./src/**/* ./test/**/* --check",
-    "postpack": "rimraf oclif.manifest.json",
-    "posttest": "pnpm run lint",
-    "prepack": "pnpm run build && oclif manifest && oclif readme",
-    "test": "chmod +x ./bin/dev.js && vitest run",
+    "build": "tsup",
+    "postbuild": "pnpm link --global",
+    "dev": "tsup --watch",
+    "clear": "rimraf data coverage dist",
+    "clear:all": "rimraf data coverage dist node_modules $PNPM_HOME/organization-cli-app",
+    "test": "vitest run --coverage",
     "test:dev": "vitest dev",
     "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
-    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit",
-    "version": "oclif readme && git add README.md"
+    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@organization/hello": "workspace:*",
-    "@organization/tsconfig": "workspace:*",
-    "@oclif/core": "^4.0.21",
-    "@oclif/plugin-help": "^6.2.11",
-    "@oclif/plugin-plugins": "^5.4.7",
-    "rimraf": "6.0.1"
+    "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@organization/eslint-config": "workspace:^",
+    "@organization/eslint-config": "workspace:*",
     "@organization/prettier-config": "workspace:*",
-    "@oclif/prettier-config": "^0.2.1",
-    "@types/node": "^22.5.4",
-    "eslint": "^8.57.0",
-    "eslint-config-oclif": "^5.2.1",
-    "eslint-config-oclif-typescript": "^3.1.11",
-    "execa": "^9.3.1",
-    "oclif": "^4.14.31",
-    "ts-node": "^10.9.2",
+    "@organization/tsconfig": "workspace:*",
+    "@organization/tsup": "workspace:*",
+    "@vitest/coverage-v8": "^2.1.1",
+    "execa": "^9.4.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.0",
     "typescript": "^5.6.2",
-    "vitest": "^2.0.5"
+    "vitest": "^2.1.1"
   },
   "keywords": [],
   "author": {
@@ -63,30 +57,10 @@
   "license": "MIT",
   "engines": {
     "node": "20.17.0",
-    "pnpm": "9.10.0"
+    "pnpm": "9.11.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.11.0",
   "prettier": "@organization/prettier-config",
-  "files": [
-    "/bin",
-    "/dist",
-    "/oclif.manifest.json"
-  ],
-  "oclif": {
-    "bin": "jhasuraj01-cli-app",
-    "commands": "./dist/commands",
-    "dirname": "jhasuraj01-cli-app",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
-    ],
-    "topics": {
-      "speak": {
-        "description": "Say hello to the world and others"
-      }
-    },
-    "topicSeparator": " "
-  },
   "nx": {}
 }

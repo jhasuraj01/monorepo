@@ -1,25 +1,68 @@
 {
-  "name": "scripts",
-  "version": "1.0.0",
+  "name": "@organization/scripts",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "update-env": "ts-node update-env.ts"
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "organization-scripts": "./dist/index.cjs"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint ./src/**/* ./test/**/* --ext .ts,js --fix",
+    "lint:check": "eslint ./src/**/* ./test/**/* --ext .ts,js",
+    "format": "prettier ./src/**/* ./test/**/* --write",
+    "format:check": "prettier ./src/**/* ./test/**/* --check",
+    "build": "tsup",
+    "postbuild": "pnpm link --global",
+    "dev": "tsup --watch",
+    "clear": "rimraf data coverage dist",
+    "clear:all": "rimraf data coverage dist node_modules $PNPM_HOME/organization-scripts",
+    "test": "vitest run --coverage",
+    "test:dev": "vitest dev",
+    "typecheck:src": "tsc -p ./tsconfig.json --noEmit",
+    "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
+  },
   "dependencies": {
+    "commander": "^12.1.0",
     "glob": "^11.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
-    "ts-node": "^10.9.2"
+    "@organization/eslint-config": "workspace:*",
+    "@organization/prettier-config": "workspace:*",
+    "@organization/tsconfig": "workspace:*",
+    "@organization/tsup": "workspace:*",
+    "@types/node": "^22.7.4",
+    "@vitest/coverage-v8": "^2.1.1",
+    "execa": "^9.4.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
   },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
   "engines": {
     "node": "20.17.0",
-    "pnpm": "9.10.0"
+    "pnpm": "9.11.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.11.0",
+  "prettier": "@organization/prettier-config",
+  "nx": {}
 }
