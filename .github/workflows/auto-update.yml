@@ -41,14 +41,12 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
-          echo PNPM_HOME = $PNPM_HOME
-          ls $PNPM_HOME
 
       - name: update env
         run: |
           pnpm i
           pnpm build
-          pnpm update:env
+          node scripts update-env .
 
       - name: update pnpm
         uses: pnpm/action-setup@v4
@@ -65,7 +63,6 @@ jobs:
           echo node version = $(node --version)
           echo pnpm version = $(pnpm --version)
           echo COMMIT_MESSAGE = $COMMIT_MESSAGE
-          echo PNPM_HOME = $PNPM_HOME
 
       - name: update dependencies
         run: |
