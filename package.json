@@ -46,15 +46,15 @@
   "license": "MIT",
   "engines": {
     "node": "20.17.0",
-    "pnpm": "9.11.0"
+    "pnpm": "9.12.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.0",
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "husky": "^9.1.6",
-    "nx": "19.8.2",
+    "nx": "19.8.3",
     "rimraf": "^6.0.1"
   }
 }
