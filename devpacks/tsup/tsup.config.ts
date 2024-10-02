@@ -3,7 +3,8 @@ import { defineConfig } from 'tsup'
 export const tsup = defineConfig((options) => {
   const isWatchMode = Boolean(options.watch)
   return {
-    format: isWatchMode ? ['esm', 'cjs'] : ['esm', 'cjs', 'iife'],
+    // format: isWatchMode ? ['esm', 'cjs'] : ['esm', 'cjs', 'iife'],
+    format: ['esm', 'cjs'],
     outExtension: ({ format }) => {
       if (format === 'esm') {
         return {

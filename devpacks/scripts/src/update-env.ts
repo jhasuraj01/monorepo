@@ -27,10 +27,10 @@ async function findLatestPackageVersion(packageName: string): Promise<string> {
 
 async function findLatestNodeLTSVersion(): Promise<string> {
   const response = await fetch('https://nodejs.org/dist/index.json')
-  const data = (await response.json()) as Array<{
+  const data = (await response.json()) as {
     version: string
     lts: string | false
-  }>
+  }[]
   const ltsVersion = data.find((v) => v.lts)?.version
   if (ltsVersion === undefined) {
     throw new Error('Could not find latest LTS version')
@@ -77,7 +77,7 @@ async function main(baseDir: string): Promise<void> {
   const latestNodeVersion = await findLatestNodeLTSVersion()
 
   // update package.json files
-  for await (const file of packageJsonFiles) {
+  for (const file of packageJsonFiles) {
     await updatePackageJson(file, latestNodeVersion, latestPnpmVersion)
   }
 

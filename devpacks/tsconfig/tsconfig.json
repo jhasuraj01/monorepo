@@ -41,7 +41,9 @@
 
     "skipLibCheck": true,
     "lib": [
-      "ESNext"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
     ],
   },
 }

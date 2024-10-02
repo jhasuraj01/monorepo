@@ -18,8 +18,8 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint ./src/**/* ./test/**/* --ext .ts,js --fix",
-    "lint:check": "eslint ./src/**/* ./test/**/* --ext .ts,js",
+    "lint": "eslint ./src/**/* ./test/**/* --fix",
+    "lint:check": "eslint ./src/**/* ./test/**/*",
     "format": "prettier ./src/**/* ./test/**/* --write",
     "format:check": "prettier ./src/**/* ./test/**/* --check",
     "build": "tsup",
