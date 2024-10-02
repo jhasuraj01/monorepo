@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@organization/eslint-config",
+  "version": "0.0.0",
+  "description": "Default EsLint Configuration for Packages",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier ./src/**/* --write",
+    "format:check": "prettier ./src/**/* --check",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clear": "rimraf dist",
+    "clear:all": "rimraf dist node_modules",
+    "typecheck:src": "tsc -p ./tsconfig.json --noEmit"
+  },
+  "keywords": [],
+  "author": {
+    "email": "contact@jhasuraj.com",
+    "name": "Suraj Jha",
+    "url": "https://jhasuraj.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": "20.17.0",
+    "pnpm": "9.12.0"
+  },
+  "engineStrict": true,
+  "packageManager": "pnpm@9.12.0",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@organization/tsconfig": "workspace:*",
+    "@organization/tsup": "workspace:*",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.10.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.0",
+    "typescript-eslint": "^8.8.0"
+  },
+  "nx": {}
+}
