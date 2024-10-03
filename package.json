@@ -33,7 +33,7 @@
     "typecheck:src:all": "nx run-many -t typecheck:src",
     "typecheck:test": "nx affected -t typecheck:test",
     "typecheck:test:all": "nx run-many -t typecheck:test",
-    "update:env": "node scripts update-env .",
+    "update:env": "node devpacks/scripts update-env .",
     "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager"
   },
   "keywords": [],
@@ -45,7 +45,7 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.17.0",
+    "node": "20.18.0",
     "pnpm": "9.12.0"
   },
   "engineStrict": true,

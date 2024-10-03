@@ -46,7 +46,7 @@ jobs:
         run: |
           pnpm i
           pnpm build:scripts
-          node scripts update-env .
+          pnpm update:env
 
       - name: update pnpm
         uses: pnpm/action-setup@v4
