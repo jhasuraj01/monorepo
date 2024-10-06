@@ -103,6 +103,9 @@ importers:
       '@eslint/js':
         specifier: ^9.12.0
         version: 9.12.0
+      '@organization/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
       '@organization/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
