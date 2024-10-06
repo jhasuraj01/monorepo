@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -10,10 +9,11 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "useUnknownInCatchVariables": true,
+    "useDefineForClassFields": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // "exactOptionalPropertyTypes": true, // oclif doesn't support this
+    "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
@@ -32,16 +32,17 @@
     "allowJs": false,
     "noErrorTruncation": true,
     "esModuleInterop": true,
-    
+
     "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "Bundler",
+    "isolatedModules": true,
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "noEmit": true,
 
     "skipLibCheck": true,
-    "lib": [
-      "ESNext"
-    ],
-  },
+    "lib": ["ESNext"]
+  }
 }
