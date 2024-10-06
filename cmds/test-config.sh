@@ -4,8 +4,8 @@ pnpm i \
 && pnpm clear:all \
 && pnpm i \
 && pnpm build \
-&& pnpm lint \
 && pnpm format \
+&& pnpm lint \
 && pnpm build \
 && pnpm typecheck:src \
 && pnpm typecheck:test \

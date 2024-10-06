@@ -3,7 +3,7 @@
 import {
   baseConfigs,
   browserConfigs,
-  nodeConfigs
+  reactConfigs
 } from '@organization/eslint-config'
 
-export default [...baseConfigs, ...nodeConfigs, ...browserConfigs]
+export default [...baseConfigs, ...browserConfigs, ...reactConfigs]

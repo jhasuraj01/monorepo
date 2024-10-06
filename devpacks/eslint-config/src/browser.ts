@@ -1,12 +1,12 @@
-import globals from "globals";
-import type { Config } from "typescript-eslint";
+import globals from 'globals'
+import { EsConfig } from './types'
 
-export const browserConfigs: Awaited<Config> = [
+export const browserConfigs: EsConfig = [
   {
     languageOptions: {
       globals: {
-        ...globals.browser,
-      },
-    },
-  },
-];
+        ...globals.browser
+      }
+    }
+  }
+]

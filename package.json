@@ -28,7 +28,7 @@
     "prepare": "husky",
     "test": "nx affected -t test",
     "test:all": "nx run-many -t test",
-    "test:config": "chmod +x test-config.sh && sh test-config.sh",
+    "test:config": "chmod +x cmds/test-config.sh && sh cmds/test-config.sh",
     "typecheck:src": "nx affected -t typecheck:src",
     "typecheck:src:all": "nx run-many -t typecheck:src",
     "typecheck:test": "nx affected -t typecheck:test",
@@ -54,7 +54,14 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "nx": "19.8.4",
     "rimraf": "^6.0.1"
+  },
+  "lint-staged": {
+    "*": [
+      "chmod +x cmds/pre-commit-check.sh",
+      "cmds/pre-commit-check.sh"
+    ]
   }
 }
