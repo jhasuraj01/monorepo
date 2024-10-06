@@ -1,8 +1,5 @@
 // @ts-check
 
-import { baseConfigs, nodeConfigs } from "@organization/eslint-config";
+import { baseConfigs, nodeConfigs } from '@organization/eslint-config'
 
-export default [
-  ...baseConfigs,
-  ...nodeConfigs,
-];
+export default [...baseConfigs, ...nodeConfigs]

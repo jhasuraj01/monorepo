@@ -59,6 +59,9 @@
     "rimraf": "^6.0.1"
   },
   "lint-staged": {
-    "*": ["chmod +x cmds/pre-commit-check.sh", "cmds/pre-commit-check.sh"]
+    "*": [
+      "chmod +x cmds/pre-commit-check.sh",
+      "cmds/pre-commit-check.sh"
+    ]
   }
 }
