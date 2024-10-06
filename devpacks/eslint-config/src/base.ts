@@ -1,13 +1,20 @@
 import eslint from "@eslint/js";
-import tseslint, { Config } from "typescript-eslint";
+import tseslint from "typescript-eslint";
 import prettier from "eslint-config-prettier";
+import { type EsConfig } from "./types";
 
 const strictTypeChecked = tseslint.configs.strictTypeChecked;
 const stylisticTypeChecked = tseslint.configs.stylisticTypeChecked;
 
-export const baseConfigs: Awaited<Config> = [
+export const baseConfigs: EsConfig = [
   {
     files: ["**/*.{js,mjs,cjs,ts,tsx,jsx}"],
+    ignores: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
+    ],
     linterOptions: {
       noInlineConfig: true,
     },
