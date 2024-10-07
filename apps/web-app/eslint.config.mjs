@@ -3,7 +3,17 @@
 import {
   baseConfigs,
   browserConfigs,
-  reactConfigs
+  reactConfigs,
+  createConfig
 } from '@organization/eslint-config'
 
-export default [...baseConfigs, ...browserConfigs, ...reactConfigs]
+export default createConfig({
+  extends: [...baseConfigs, ...browserConfigs, ...reactConfigs],
+  files: ['src/**/*.{ts,tsx,js,jsx}'],
+  languageOptions: {
+    parserOptions: {
+      project: './tsconfig.json',
+      tsconfigRootDir: import.meta.dirname
+    }
+  }
+})

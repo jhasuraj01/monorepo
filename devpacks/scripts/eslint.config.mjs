@@ -1,5 +1,18 @@
 // @ts-check
 
-import { baseConfigs, nodeConfigs } from '@organization/eslint-config'
+import {
+  baseConfigs,
+  createConfig,
+  nodeConfigs
+} from '@organization/eslint-config'
 
-export default [...baseConfigs, ...nodeConfigs]
+export default createConfig({
+  extends: [...baseConfigs, ...nodeConfigs],
+  files: ['{src,test}/**/*.{ts,js}'],
+  languageOptions: {
+    parserOptions: {
+      project: ['./tsconfig.json', './test/tsconfig.json'],
+      tsconfigRootDir: import.meta.dirname
+    }
+  }
+})

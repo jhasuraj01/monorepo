@@ -1,3 +1,3 @@
-import { type Config } from 'typescript-eslint'
+import tseslint from 'typescript-eslint'
 
-export type EsConfig = Awaited<Config>
+export type EsConfig = ReturnType<typeof tseslint.config>
