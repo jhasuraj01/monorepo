@@ -34,7 +34,7 @@
     "typecheck:test": "nx affected -t typecheck:test",
     "typecheck:test:all": "nx run-many -t typecheck:test",
     "update:env": "node devpacks/scripts update-env .",
-    "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod,packageManager"
+    "update:packages": "npx npm-check-updates -u --peer --deep --enginesNode --packageManager=pnpm --dep=dev,optional,peer,prod"
   },
   "keywords": [],
   "author": {
@@ -46,16 +46,16 @@
   "license": "MIT",
   "engines": {
     "node": "20.18.0",
-    "pnpm": "9.12.0"
+    "pnpm": "9.12.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@9.12.1",
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "nx": "19.8.4",
+    "nx": "20.0.0",
     "rimraf": "^6.0.1"
   },
   "lint-staged": {

@@ -3,31 +3,27 @@ import tseslint from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
 import { type EsConfig } from './types'
 
-const strictTypeChecked = tseslint.configs.strictTypeChecked
-const stylisticTypeChecked = tseslint.configs.stylisticTypeChecked
+export const createConfig: typeof tseslint.config = tseslint.config
 
-export const baseConfigs: EsConfig = [
-  {
-    files: ['**/*.{js,mjs,cjs,ts,tsx,jsx}'],
-    ignores: [
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/build/**',
-      '**/coverage/**'
-    ],
-    linterOptions: {
-      noInlineConfig: true
-    },
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.json', './test/tsconfig.json']
-      },
-      ecmaVersion: 'latest',
-      sourceType: 'module'
-    }
+export const baseConfigs: EsConfig = createConfig({
+  extends: [
+    eslint.configs.recommended,
+    ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
+    prettier
+  ],
+  linterOptions: {
+    noInlineConfig: true
   },
-  eslint.configs.recommended,
-  ...strictTypeChecked,
-  ...stylisticTypeChecked,
-  prettier
-]
+  languageOptions: {
+    /* enable if typechecking is not working */
+    // parserOptions: {
+    //   project: ['./tsconfig.json'],
+    //   tsconfigRootDir: baseDir,
+    //   ecmaVersion: 'latest',
+    //   sourceType: 'module',
+    // },
+    sourceType: 'module',
+    ecmaVersion: 'latest'
+  }
+})

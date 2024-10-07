@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 export const App: React.FC = () => {
   const [count, setCount] = useState<number>(0)
+
+  useEffect(() => {
+    document.title = `You clicked ${count.toString()} times`
+  }, [count])
 
   return (
     <>
@@ -18,7 +22,11 @@ export const App: React.FC = () => {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          onClick={() => {
+            setCount((count) => count + 1)
+          }}
+        >
           count is {count}
         </button>
         <p>

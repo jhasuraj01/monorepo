@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint ./src/**/* --fix",
-    "lint:check": "eslint ./src/**/*",
+    "lint": "eslint --fix",
+    "lint:check": "eslint",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "build": "tsc -b && vite build",
@@ -43,10 +43,10 @@
   "license": "MIT",
   "engines": {
     "node": "20.18.0",
-    "pnpm": "9.12.0"
+    "pnpm": "9.12.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@9.12.1",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
