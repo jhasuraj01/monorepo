@@ -27,7 +27,7 @@
     "@organization/tsconfig": "workspace:*",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.0",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "peerDependencies": {
     "tsup": "^8.3.0"
