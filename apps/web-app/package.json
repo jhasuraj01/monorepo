@@ -28,7 +28,7 @@
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "typescript": "^5.6.3",
     "vite": "^5.4.8"
