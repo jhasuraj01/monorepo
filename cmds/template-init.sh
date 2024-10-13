@@ -10,12 +10,12 @@ template_names=(
 
 # Main Script
 script_path=$(realpath "$0") # Get the full path of this script
-target_path_raw="$1"
-template_name="$2" # Get the name of the template
+template_name="$1" # Get the name of the template
+target_path_raw="$2"
 
 # Validate the input
 if [ -z "$target_path_raw" ] || [ -z "$template_name" ]; then
-    echo "Usage: $script_path <target_path> <template_name>"
+    echo "Usage: $script_path <template_name> <target_path>"
     exit 1
 fi
 
