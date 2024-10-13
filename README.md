@@ -17,6 +17,16 @@ Run below scripts to run automation scripts
 organization-scripts
 ```
 
+Save or update project template
+```
+./cmds/template-save.sh packages/hello package
+```
+
+Scaffold new project from template
+```
+./cmds/template-init.sh packages/welcome package
+```
+
 To add a dependency to all packages in your workspace using **pnpm**, you can use the following command:
 
 ```sh
