@@ -26,11 +26,11 @@
   "devDependencies": {
     "@organization/tsconfig": "workspace:*",
     "rimraf": "^6.0.1",
-    "tsup": "^8.3.0",
+    "tsup": "^8.3.4",
     "typescript": "^5.6.3"
   },
   "peerDependencies": {
-    "tsup": "^8.3.0"
+    "tsup": "^8.3.4"
   },
   "keywords": [],
   "author": {
