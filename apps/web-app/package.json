@@ -42,11 +42,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.18.0",
-    "pnpm": "9.12.2"
+    "node": "22.11.0",
+    "pnpm": "9.12.3"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }

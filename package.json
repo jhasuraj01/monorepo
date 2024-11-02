@@ -45,17 +45,17 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "20.18.0",
-    "pnpm": "9.12.2"
+    "node": "22.11.0",
+    "pnpm": "9.12.3"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "nx": "20.0.6",
+    "nx": "20.0.7",
     "rimraf": "^6.0.1"
   },
   "lint-staged": {
