@@ -27,7 +27,7 @@
     "@organization/tsconfig": "workspace:*",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "peerDependencies": {
     "tsup": "^8.3.5"
@@ -42,9 +42,9 @@
   "license": "MIT",
   "engines": {
     "node": "22.11.0",
-    "pnpm": "9.12.3"
+    "pnpm": "9.14.2"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.2",
   "nx": {}
 }

@@ -35,11 +35,11 @@
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
     "@organization/tsup": "workspace:*",
-    "@vitest/coverage-v8": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.5",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.4"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.5"
   },
   "keywords": [],
   "author": {
@@ -51,10 +51,10 @@
   "license": "MIT",
   "engines": {
     "node": "22.11.0",
-    "pnpm": "9.12.3"
+    "pnpm": "9.14.2"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.2",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
