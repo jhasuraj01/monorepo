@@ -22,10 +22,10 @@
   "license": "MIT",
   "engines": {
     "node": "22.11.0",
-    "pnpm": "9.14.2"
+    "pnpm": "9.14.4"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.14.4",
   "devDependencies": {
     "rimraf": "^6.0.1",
     "typescript": "^5.7.2"
