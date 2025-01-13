@@ -33,20 +33,20 @@
     "typecheck:test": "tsc -p ./test/tsconfig.json --noEmit"
   },
   "dependencies": {
-    "commander": "^12.1.0",
-    "glob": "^11.0.0"
+    "commander": "^13.0.0",
+    "glob": "^11.0.1"
   },
   "devDependencies": {
     "@organization/eslint-config": "workspace:*",
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
     "@organization/tsup": "workspace:*",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.5",
     "@vitest/coverage-v8": "^2.1.8",
-    "execa": "^9.5.1",
+    "execa": "^9.5.2",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vitest": "^2.1.8"
   },
   "keywords": [],
@@ -58,11 +58,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.12.0",
-    "pnpm": "9.15.0"
+    "node": "22.13.0",
+    "pnpm": "9.15.3"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.3",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
