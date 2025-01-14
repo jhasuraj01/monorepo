@@ -51,11 +51,11 @@
   "engineStrict": true,
   "packageManager": "pnpm@9.12.1",
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "nx": "20.0.0",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "nx": "20.3.1",
     "rimraf": "^6.0.1"
   },
   "lint-staged": {
