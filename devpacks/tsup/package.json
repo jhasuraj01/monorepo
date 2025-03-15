@@ -41,10 +41,10 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.13.1",
-    "pnpm": "9.15.4"
+    "node": "22.14.0",
+    "pnpm": "10.6.3"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.6.3",
   "nx": {}
 }
