@@ -28,7 +28,7 @@
   "packageManager": "pnpm@9.15.4",
   "devDependencies": {
     "rimraf": "^6.0.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "nx": {}
 }

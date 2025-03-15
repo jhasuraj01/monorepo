@@ -41,13 +41,13 @@
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
     "@organization/tsup": "workspace:*",
-    "@types/node": "^22.13.0",
-    "@vitest/coverage-v8": "^3.0.4",
+    "@types/node": "^22.13.10",
+    "@vitest/coverage-v8": "^3.0.8",
     "execa": "^9.5.2",
     "rimraf": "^6.0.1",
-    "tsup": "^8.3.6",
-    "typescript": "^5.7.3",
-    "vitest": "^3.0.4"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
   },
   "keywords": [],
   "author": {
