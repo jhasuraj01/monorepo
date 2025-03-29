@@ -20,8 +20,8 @@
     "typecheck:test": "echo 'No test files'"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@organization/eslint-config": "workspace:*",
@@ -33,7 +33,7 @@
     "eslint": "^9.23.0",
     "prettier": "3.5.3",
     "typescript": "^5.8.2",
-    "vite": "^6.2.2"
+    "vite": "^6.2.3"
   },
   "keywords": [],
   "author": {
@@ -45,10 +45,10 @@
   "license": "MIT",
   "engines": {
     "node": "22.14.0",
-    "pnpm": "10.6.5"
+    "pnpm": "10.7.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.6.5",
+  "packageManager": "pnpm@10.7.0",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }

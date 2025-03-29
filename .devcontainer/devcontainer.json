@@ -15,10 +15,10 @@
       "version": "22.14.0"
     },
     "ghcr.io/devcontainers-contrib/features/pnpm": {
-      "version": "10.6.5"
+      "version": "10.7.0"
     },
     "ghcr.io/balazs23/devcontainers-features/nx": {
-      "version": "20.6.2"
+      "version": "20.6.4"
     }
   },
   "postCreateCommand": "pnpm setup"
