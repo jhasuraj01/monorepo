@@ -23,13 +23,13 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.13.0",
-    "pnpm": "9.15.3"
+    "node": "22.14.0",
+    "pnpm": "10.7.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@10.7.1",
   "devDependencies": {
-    "prettier": "3.4.2",
+    "prettier": "3.5.3",
     "rimraf": "^6.0.1"
   },
   "nx": {}
