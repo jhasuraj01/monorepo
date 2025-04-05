@@ -35,18 +35,18 @@
   "license": "MIT",
   "engines": {
     "node": "22.14.0",
-    "pnpm": "10.7.0"
+    "pnpm": "10.7.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.7.1",
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.24.0",
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
     "@organization/tsup": "workspace:*",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^22.13.14",
-    "eslint": "^9.23.0",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -54,7 +54,7 @@
     "prettier": "3.5.3",
     "rimraf": "^6.0.1",
     "tsup": "^8.4.0",
-    "typescript-eslint": "^8.28.0"
+    "typescript-eslint": "^8.29.0"
   },
   "nx": {},
   "prettier": "@organization/prettier-config"
