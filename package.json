@@ -28,7 +28,9 @@
     "prepare": "husky",
     "test": "nx affected -t test",
     "test:all": "nx run-many -t test",
-    "test:config": "chmod +x cmds/test-config.sh && sh cmds/test-config.sh",
+    "cmds:test-config": "chmod +x cmds/test-config.sh && ./cmds/test-config.sh",
+    "cmds:template-init": "chmod +x cmds/template-init.sh && ./cmds/template-init.sh",
+    "cmds:template-save": "chmod +x cmds/template-save.sh && ./cmds/template-save.sh",
     "typecheck:src": "nx affected -t typecheck:src",
     "typecheck:src:all": "nx run-many -t typecheck:src",
     "typecheck:test": "nx affected -t typecheck:test",
@@ -46,16 +48,16 @@
   "license": "MIT",
   "engines": {
     "node": "22.14.0",
-    "pnpm": "10.7.1"
+    "pnpm": "10.8.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.8.0",
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "nx": "20.7.1",
+    "lint-staged": "^15.5.1",
+    "nx": "20.7.2",
     "rimraf": "^6.0.1"
   },
   "lint-staged": {
