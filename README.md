@@ -1,5 +1,8 @@
 # Monorepo Template
 
+## Setup
+Add `NX_CLOUD_ACCESS_TOKEN` env variable to enable remote cache for Github Actions and Github Codespaces.
+
 ## Installation
 ```sh
 pnpm i
