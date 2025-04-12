@@ -10,53 +10,42 @@ template_names=(
 
 # Main Script
 script_path=$(realpath "$0") # Get the full path of this script
-template_name="${1:-all}" # Get the name of the template or all
-target_path_raw="${2:-./templates}" # Get the target path or default to ./templates
+template_name="$1" # Get the name of the template
+target_path_raw="$2"
 
 # Validate the input
 if [ -z "$target_path_raw" ] || [ -z "$template_name" ]; then
-    echo "Error: Missing arguments."
-    echo "template_name: $template_name"
-    echo "target_path: $target_path_raw"
-    echo "Usage: $script_path <template_name|all> <target_path>"
+    echo "Usage: $script_path <template_name> <target_path>"
     exit 1
 fi
 
-rm -rf "$target_path_raw" 
-mkdir -p "$target_path_raw"
+if [ -d "$target_path_raw" ]; then
+    echo "Target path already exists. Please specify a new directory."
+    exit 1
+else
+    mkdir -p "$target_path_raw"
+fi
 
-# Get real paths
-target_path=$(realpath "$target_path_raw") # Full path of the target directory
+# Process Inputs
+target_path=$(realpath "$target_path_raw") # Get the full path of the target directory
+
+# Generate Paths
 script_dir=$(dirname "$script_path")
 zip_file_dir=$(realpath "$script_dir/$template_dir")
+zip_file="$zip_file_dir/$template_name.zip"
 
-scaffold_template() {
-    local name="$1"
-    local dest_path="$target_path/$name"
-    local zip_file="$zip_file_dir/$name.zip"
-
-    if [ ! -f "$zip_file" ]; then
-        echo "Template file does not exist: $zip_file"
-        exit 1
-    fi
-
-    echo "=> Scaffolding from $name template to $dest_path"
-    echo "-----------------------------------------------------------------------------------------------------"
-    mkdir -p "$dest_path"
-    unzip -q "$zip_file" -d "$dest_path" || (echo "Failed to unzip $zip_file to $dest_path" && exit 1)
-    echo "=> $name scaffolded successfully to $dest_path"
-    echo
-}
-
-# Handle all or single template
-if [ "$template_name" == "all" ]; then
-    for name in "${template_names[@]}"; do
-        scaffold_template "$name"
-    done
-else
-    if [[ ! " ${template_names[@]} " =~ " ${template_name} " ]]; then
-        echo "Invalid template name. Available templates: ${template_names[*]}"
-        exit 1
-    fi
-    scaffold_template "$template_name"
+if [[ ! ${template_names[@]} =~ ${template_name} ]]; then
+    echo "Invalid template name. Available templates: ${template_names[*]}"
+    exit 1
 fi
+
+if [ ! -f "$zip_file" ]; then
+    echo "Template file does not exist: $zip_file"
+    exit 1
+fi
+
+echo "=> Scaffolding from $template_name template to target path: $target_path"
+echo "====================================================================================================="
+unzip "$zip_file" -d "$target_path" || exit 1 # Extract the zip archive
+echo "====================================================================================================="
+echo "=> Scaffolded successfully to $target_path"
