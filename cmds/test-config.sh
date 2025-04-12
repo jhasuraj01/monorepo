@@ -16,19 +16,15 @@ rm -rf "$templates_out_dir"
 mkdir -p "$templates_out_dir"
 
 # Init all templates
-chmod +x "$template_init_path"
-"$template_init_path" "package" "$templates_out_dir/package"
-"$template_init_path" "cli-app" "$templates_out_dir/cli-app"
-"$template_init_path" "web-app" "$templates_out_dir/web-app"
+chmod +x $template_init_path
+$template_init_path all $templates_out_dir
 
 # remove existing package-lock.yaml
 rm -rf "$script_dir/../package-lock.yaml"
 
 # Update all packages
-pnpm i
 pnpm update
 pnpm update:packages
-pnpm clear:all
 
 # Test all packages
 pnpm i
@@ -45,12 +41,10 @@ pnpm clear:all
 
 # Save all templates
 chmod +x "$template_save_path"
-"$template_save_path" "package" "$templates_out_dir/package"
-"$template_save_path" "cli-app" "$templates_out_dir/cli-app"
-"$template_save_path" "web-app" "$templates_out_dir/web-app"
+$template_save_path all $templates_out_dir
 
 # Cleanup
-rm -rf "$templates_out_dir"
+rm -rf $templates_out_dir
 
 # Remove references to the templates from the package-lock.yaml
 pnpm i

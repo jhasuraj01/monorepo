@@ -46,7 +46,9 @@ jobs:
         run: |
           pnpm i
           pnpm build:scripts
+          pnpm cmds:template-init
           pnpm update:env
+          pnpm cmds:template-save
 
       - name: update pnpm
         uses: pnpm/action-setup@v4
@@ -66,7 +68,7 @@ jobs:
 
       - name: update dependencies
         run: |
-          pnpm test:config
+          pnpm cmds:test-config
 
       - name: create or update pull request
         uses: peter-evans/create-pull-request@v6
