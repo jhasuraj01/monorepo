@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e # Exit immediately if a command exits with a non-zero status
+
 # Main Script
 script_path=$(realpath "$0") # Get the full path of this script
 script_dir=$(dirname "$script_path")
