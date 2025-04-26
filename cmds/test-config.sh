@@ -29,7 +29,7 @@ pnpm update
 pnpm update:packages
 
 # Test all packages
-pnpm i
+pnpm i --no-frozen-lockfile
 pnpm build
 pnpm format
 pnpm lint
