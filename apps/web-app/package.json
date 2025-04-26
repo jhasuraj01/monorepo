@@ -27,13 +27,13 @@
     "@organization/eslint-config": "workspace:*",
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
-    "@types/react": "^19.1.1",
+    "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "@vitejs/plugin-react-swc": "^3.8.1",
-    "eslint": "^9.24.0",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "eslint": "^9.25.1",
     "prettier": "3.5.3",
     "typescript": "^5.8.3",
-    "vite": "^6.2.6"
+    "vite": "^6.3.3"
   },
   "keywords": [],
   "author": {
@@ -44,11 +44,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.14.0",
-    "pnpm": "10.8.0"
+    "node": "22.15.0",
+    "pnpm": "10.9.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.9.0",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
