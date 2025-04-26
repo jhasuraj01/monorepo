@@ -12,13 +12,13 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/node": {
-      "version": "22.14.0"
+      "version": "22.15.0"
     },
     "ghcr.io/devcontainers-contrib/features/pnpm": {
-      "version": "10.8.0"
+      "version": "10.9.0"
     },
     "ghcr.io/balazs23/devcontainers-features/nx": {
-      "version": "20.7.2"
+      "version": "20.8.1"
     }
   },
   "postCreateCommand": "pnpm setup"
