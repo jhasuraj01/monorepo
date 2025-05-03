@@ -42,9 +42,9 @@
   "license": "MIT",
   "engines": {
     "node": "22.15.0",
-    "pnpm": "10.9.0"
+    "pnpm": "10.10.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.10.0",
   "nx": {}
 }
