@@ -27,9 +27,9 @@
     "@organization/eslint-config": "workspace:*",
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
-    "@types/react": "^19.1.4",
+    "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react-swc": "^3.9.0",
+    "@vitejs/plugin-react-swc": "^3.10.0",
     "eslint": "^9.27.0",
     "prettier": "3.5.3",
     "typescript": "^5.8.3",
@@ -44,7 +44,7 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.15.1",
+    "node": "22.16.0",
     "pnpm": "10.11.0"
   },
   "engineStrict": true,

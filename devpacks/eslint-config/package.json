@@ -34,7 +34,7 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.15.1",
+    "node": "22.16.0",
     "pnpm": "10.11.0"
   },
   "engineStrict": true,
@@ -45,7 +45,7 @@
     "@organization/tsconfig": "workspace:*",
     "@organization/tsup": "workspace:*",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^22.15.18",
+    "@types/node": "^22.15.21",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-react-hooks": "^5.2.0",
