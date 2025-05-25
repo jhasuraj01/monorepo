@@ -47,7 +47,7 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.15.1",
+    "node": "22.16.0",
     "pnpm": "10.11.0"
   },
   "engineStrict": true,
@@ -57,7 +57,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
-    "nx": "21.0.3",
+    "nx": "21.1.1",
     "rimraf": "^6.0.1"
   },
   "lint-staged": {
