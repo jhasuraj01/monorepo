@@ -30,10 +30,10 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react-swc": "^3.10.2",
-    "eslint": "^9.29.0",
-    "prettier": "3.5.3",
+    "eslint": "^9.31.0",
+    "prettier": "3.6.2",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^7.0.4"
   },
   "keywords": [],
   "author": {
@@ -44,11 +44,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.16.0",
-    "pnpm": "10.12.1"
+    "node": "22.17.0",
+    "pnpm": "10.13.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.13.1",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
