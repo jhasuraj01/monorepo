@@ -20,20 +20,20 @@
     "typecheck:test": "echo 'No test files'"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@organization/eslint-config": "workspace:*",
     "@organization/prettier-config": "workspace:*",
     "@organization/tsconfig": "workspace:*",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react-swc": "^3.10.2",
-    "eslint": "^9.31.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react-swc": "^4.0.1",
+    "eslint": "^9.34.0",
     "prettier": "3.6.2",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.4"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
   },
   "keywords": [],
   "author": {
@@ -44,11 +44,11 @@
   "contributors": [],
   "license": "MIT",
   "engines": {
-    "node": "22.17.0",
-    "pnpm": "10.13.1"
+    "node": "22.19.0",
+    "pnpm": "10.15.0"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.15.0",
   "prettier": "@organization/prettier-config",
   "nx": {}
 }
