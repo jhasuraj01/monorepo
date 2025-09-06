@@ -48,15 +48,15 @@
   "license": "MIT",
   "engines": {
     "node": "22.19.0",
-    "pnpm": "10.15.0"
+    "pnpm": "10.15.1"
   },
   "engineStrict": true,
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "nx": "21.4.1",
     "rimraf": "^6.0.1"
   },
